@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Kültür Kebaphaus | Türkische Küche Bremen</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#1E5FA8">
+<style>
+:root{--bg:#FFF8E5;--surface:#FFFCF0;--text:#0F2544;--text2:#7A5A2A;--text3:#C9A85E;--accent:#E63946;--accent-light:#FFE1E3;--blue:#1E5FA8;--tile:#1E5FA8;--turq:#17A9B8;--gold:#D4A017;--gold-l:#FFD966;--border:rgba(212,160,23,.45);--shadow:0 6px 20px rgba(120,80,20,.18);--pat:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22 viewBox=%220 0 64 64%22%3E%3Cg fill=%22none%22 stroke=%22%23D4A017%22 stroke-opacity=%22.28%22 stroke-width=%221.2%22%3E%3Crect x=%2216%22 y=%2216%22 width=%2232%22 height=%2232%22/%3E%3Crect x=%2216%22 y=%2216%22 width=%2232%22 height=%2232%22 transform=%22rotate%2845 32 32%29%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%227%22/%3E%3Cpath d=%22M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48%22/%3E%3C/g%3E%3C/svg%3E");--pat-h:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22 viewBox=%220 0 64 64%22%3E%3Cg fill=%22none%22 stroke=%22%23FFD966%22 stroke-opacity=%22.35%22 stroke-width=%221.2%22%3E%3Crect x=%2216%22 y=%2216%22 width=%2232%22 height=%2232%22/%3E%3Crect x=%2216%22 y=%2216%22 width=%2232%22 height=%2232%22 transform=%22rotate%2845 32 32%29%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%227%22/%3E%3Cpath d=%22M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48%22/%3E%3C/g%3E%3C/svg%3E");--band:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2228%22 height=%2210%22 viewBox=%220 0 28 10%22%3E%3Crect width=%2228%22 height=%2210%22 fill=%22%231E5FA8%22/%3E%3Cpath d=%22M14 0L24 5L14 10L4 5Z%22 fill=%22%23E63946%22/%3E%3Cpath d=%22M14 2.6L19.5 5L14 7.4L8.5 5Z%22 fill=%22%23FFD966%22/%3E%3Cpath d=%22M0 .7h28M0 9.3h28%22 stroke=%22%23FFD966%22 stroke-width=%221.4%22/%3E%3C/svg%3E");--f-d:'Amiri','Times New Roman',serif;--f-k:'Reem Kufi','Inter',system-ui,sans-serif;--hh:60px;}
+body.dark{--bg:#0A1830;--surface:#132B4C;--text:#FFF6DC;--text2:#E2C57E;--text3:#7A8FAE;--accent:#FF6B78;--accent-light:#4A2028;--blue:#5FA8F0;--tile:#2E78C0;--turq:#3DD0DF;--gold:#FFD966;--gold-l:#FFE89A;--border:rgba(255,217,102,.45);--shadow:0 6px 20px rgba(0,0,0,.55);--pat:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22 viewBox=%220 0 64 64%22%3E%3Cg fill=%22none%22 stroke=%22%23FFD966%22 stroke-opacity=%22.18%22 stroke-width=%221.2%22%3E%3Crect x=%2216%22 y=%2216%22 width=%2232%22 height=%2232%22/%3E%3Crect x=%2216%22 y=%2216%22 width=%2232%22 height=%2232%22 transform=%22rotate%2845 32 32%29%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%227%22/%3E%3Cpath d=%22M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48%22/%3E%3C/g%3E%3C/svg%3E");}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+::selection{background:var(--gold-l);color:#1B2A41;}
+:focus-visible{outline:3px solid var(--turq);outline-offset:2px;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background-color:var(--bg);background-image:var(--pat);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;transition:background-color .3s,color .3s;}
+header{position:sticky;top:0;z-index:100;padding:10px 14px 18px;display:flex;justify-content:space-between;align-items:center;gap:8px;color:#FFF8D8;border-bottom:2px solid var(--gold-l);background-image:var(--band),var(--pat-h),linear-gradient(180deg,#2E78C0,#1E5FA8);background-repeat:repeat-x,repeat,no-repeat;background-position:left bottom,0 0,0 0;box-shadow:0 4px 20px rgba(30,95,168,.35);}
+.logo{font-family:var(--f-k);font-size:1.05rem;font-weight:700;letter-spacing:.02em;white-space:nowrap;display:flex;align-items:center;gap:8px;text-shadow:0 2px 6px rgba(0,0,0,.35);}
+.logo span{color:var(--gold-l);}
+.logo-star{width:26px;height:26px;color:var(--gold-l);flex-shrink:0;filter:drop-shadow(0 0 6px rgba(255,217,102,.6));}
+.header-actions{display:flex;align-items:center;gap:8px;}
+.lang-switcher{display:flex;background:rgba(255,248,216,.15);border:1px solid rgba(255,217,102,.7);border-radius:4px;padding:2px;}
+.lang-btn{background:transparent;border:none;padding:4px 9px;border-radius:2px;font-family:var(--f-k);font-size:.7rem;font-weight:700;color:#FFF0B8;cursor:pointer;}
+.lang-btn.active{background:var(--gold-l);color:#1B2A41;box-shadow:0 0 10px rgba(255,217,102,.7);}
+.theme-toggle,.rate-btn{background:rgba(255,248,216,.15);border:1.5px solid var(--gold-l);color:var(--gold-l);height:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:var(--f-k);text-decoration:none;transition:all .2s;}
+.theme-toggle{width:32px;border-radius:50%;}
+.theme-toggle svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.rate-btn{padding:0 12px;border-radius:4px;gap:5px;font-size:.72rem;font-weight:700;background:linear-gradient(180deg,#E63946,#B8212E);border-color:#FFD966;color:#FFF8D8;box-shadow:0 3px 10px rgba(230,57,70,.5);}
+.rate-btn:hover{transform:scale(1.05);box-shadow:0 4px 14px rgba(255,217,102,.7);}
+.rate-btn svg{width:14px;height:14px;fill:#FFD966;stroke:#FFD966;}
+@media(max-width:480px){.rate-btn span{display:none;}.rate-btn{width:32px;padding:0;}}
+.hero{position:relative;max-width:520px;margin:16px auto 0;height:236px;padding:0 16px;}
+.mihrab{position:absolute;top:0;left:16px;width:calc(100% - 32px);height:100%;filter:drop-shadow(0 10px 18px rgba(30,95,168,.45));}
+.hero-txt{position:relative;text-align:center;padding-top:76px;color:#FFF8D8;}
+.hero-ar{font-family:var(--f-d);font-size:2rem;line-height:1.15;color:var(--gold-l);direction:rtl;text-shadow:0 2px 8px rgba(0,0,0,.4);}
+.hero-title{font-family:var(--f-d);font-size:1.55rem;font-weight:700;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.4);}
+.hero-sub{font-family:var(--f-k);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#FFE89A;margin-top:2px;}
+.hero-orn{width:130px;height:14px;color:var(--gold-l);margin:8px auto 4px;display:block;filter:drop-shadow(0 0 4px rgba(255,217,102,.7));}
+.hero-wel{font-family:var(--f-d);font-size:1.05rem;}
+.lantern{position:absolute;top:-16px;width:40px;height:auto;filter:drop-shadow(0 0 10px rgba(255,217,102,.6));}
+.lantern.l{left:0;}.lantern.r{right:0;}
+.tulips{display:flex;justify-content:center;gap:10px;padding:10px 0 0;}
+.tulips svg{width:22px;height:28px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.2));}
+.search-container{padding:12px 16px 0;max-width:720px;margin:0 auto;}
+.search-box{position:relative;}
+.search-box input{width:100%;padding:12px 14px 12px 40px;border-radius:6px;border:2px solid var(--gold);background:var(--surface);font-family:inherit;font-size:.92rem;outline:none;color:var(--text);box-shadow:0 4px 14px rgba(212,160,23,.15);}
+.search-box input::placeholder{color:var(--text2);opacity:.85;}
+.search-box input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(230,57,70,.2),0 4px 14px rgba(212,160,23,.2);}
+.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+.filters-wrapper{position:sticky;top:var(--hh,60px);z-index:90;background-color:var(--bg);background-image:var(--pat);padding:12px 16px 10px;border-bottom:3px double var(--gold);margin-top:12px;}
+.tabs-row{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px;max-width:720px;margin:0 auto;}
+.tabs-row::-webkit-scrollbar{display:none;}
+.tabs-row+.tabs-row{margin-top:8px;}
+#dietaryTabs{flex-wrap:wrap;overflow:visible;}
+.tab-btn{font-family:var(--f-k);background:var(--surface);border:1.5px solid var(--gold);color:var(--blue);padding:7px 15px;border-radius:4px;font-size:.78rem;font-weight:600;cursor:pointer;white-space:nowrap;box-shadow:0 3px 10px rgba(212,160,23,.18);transition:all .2s;}
+.tab-btn:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(212,160,23,.28);}
+.tab-btn.active{background:linear-gradient(180deg,#2E78C0,#1E5FA8);color:var(--gold-l);border-color:var(--gold-l);box-shadow:0 4px 14px rgba(30,95,168,.4),inset 0 1px 0 rgba(255,255,255,.3);}
+.tab-btn.dietary{font-size:.74rem;padding:5px 12px;}
+.tab-btn.dietary::before{content:'✦ ';color:var(--gold);}
+.tab-btn.dietary.active::before{content:'✓ ';color:var(--gold-l);}
+.toolbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px 0;max-width:720px;margin:0 auto;}
+.result-count{font-family:var(--f-d);font-size:1rem;font-style:italic;color:var(--text2);font-weight:600;}
+.sort-select{background:var(--surface);color:var(--text);border:1.5px solid var(--gold);border-radius:4px;padding:5px 8px;font-size:.75rem;font-family:var(--f-k);cursor:pointer;}
+.menu-list{padding:14px 16px 8px;display:flex;flex-direction:column;gap:16px;max-width:720px;margin:0 auto;}
+.menu-card{position:relative;background-color:var(--surface);background-image:var(--pat);border:2px solid var(--gold);border-radius:6px;box-shadow:0 6px 18px rgba(212,160,23,.22);display:flex;cursor:pointer;transition:transform .2s,box-shadow .2s;}
+.menu-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(212,160,23,.32);}
+.menu-card:active{transform:scale(.985);}
+.menu-card.today{border-width:3px;border-color:var(--accent);box-shadow:0 6px 20px rgba(230,57,70,.35);}
+.card-image{width:94px;height:118px;margin:14px 0 14px 14px;flex-shrink:0;position:relative;border:2px solid var(--gold);border-radius:47px 47px 6px 6px;overflow:hidden;background:var(--surface);box-shadow:inset 0 0 0 2px var(--surface);}
+.card-image img{width:100%;height:100%;object-fit:cover;display:block;}
+.badge-stack{position:absolute;bottom:0;left:0;right:0;display:flex;flex-direction:column;gap:0;align-items:stretch;}
+.card-badge{font-family:var(--f-k);display:block;text-align:center;padding:2px 4px;font-size:.55rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--gold-l);color:#1B2A41;}
+.badge-veg{background:#2E9E50!important;color:#FFF!important;}
+.badge-vegan{background:#0F9EAF!important;color:#FFF!important;}
+.badge-gf{background:#E5A81F!important;color:#2B1D00!important;}
+.modal-tags .card-badge{display:inline-block;padding:3px 12px;border-radius:2px;font-size:.66rem;}
+.card-content{padding:14px 16px 12px 12px;display:flex;flex-direction:column;flex-grow:1;justify-content:center;min-width:0;}
+.card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:4px;}
+.card-title{font-family:var(--f-d);font-size:1.2rem;font-weight:700;line-height:1.15;color:var(--blue);}
+.card-price,.modal-price{font-family:var(--f-d);font-weight:700;white-space:nowrap;color:#2B1D00;background:linear-gradient(180deg,#FFE89A,#FFC93C);padding:3px 14px;clip-path:polygon(9px 0,calc(100% - 9px) 0,100% 50%,calc(100% - 9px) 100%,9px 100%,0 50%);box-shadow:0 2px 6px rgba(212,160,23,.35);}
+.card-price{font-size:1rem;}
+.card-desc{font-size:.8rem;color:var(--text2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.4;}
+.card-meta{font-size:.72rem;color:var(--text2);margin-top:6px;font-weight:500;}
+.chef{color:var(--accent);font-weight:700;}
+.card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:6px;border-top:1px dashed var(--border);}
+.allergens{font-family:var(--f-k);font-size:.68rem;color:var(--gold);font-weight:700;letter-spacing:.04em;}
+.info-icon{color:var(--accent);width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;}
+.empty-state{text-align:center;padding:40px 20px;color:var(--text2);}
+.empty-state svg{width:48px;height:48px;fill:none;stroke:var(--gold);stroke-width:1.5;margin-bottom:12px;}
+.empty-state h3{font-family:var(--f-d);font-size:1.3rem;margin-bottom:8px;color:var(--blue);}
+.empty-state p{margin-bottom:16px;font-size:.9rem;}
+.reset-btn{background:linear-gradient(180deg,#2E78C0,#1E5FA8);color:var(--gold-l);border:1.5px solid var(--gold-l);padding:11px 22px;border-radius:4px;font-family:var(--f-k);font-size:.85rem;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(30,95,168,.35),inset 0 1px 0 rgba(255,255,255,.25);text-decoration:none;display:inline-block;text-align:center;transition:all .2s;}
+.reset-btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(30,95,168,.45);}
+.reset-btn.secondary{background:var(--surface);color:var(--blue);border-color:var(--gold);box-shadow:0 3px 10px rgba(212,160,23,.2);}
+dialog{border:none;padding:0;margin:0;width:100%;max-width:720px;height:100vh;height:100dvh;background-color:var(--bg);background-image:var(--pat);color:var(--text);position:fixed;top:0;left:50%;transform:translate(-50%,100%);transition:transform .4s cubic-bezier(.32,.72,0,1);display:flex;flex-direction:column;overflow:hidden;z-index:1000;}
+dialog[open]{transform:translate(-50%,0);}
+dialog::backdrop{background:rgba(10,24,48,.72);backdrop-filter:blur(3px);}
+.modal-content{display:flex;flex-direction:column;height:100%;overflow-y:auto;}
+.modal-image-container{position:relative;width:100%;height:270px;flex-shrink:0;border-bottom:3px solid var(--gold);background:var(--surface);}
+.modal-image{width:100%;height:100%;object-fit:cover;display:block;}
+.arch-cut{position:absolute;left:0;bottom:-1px;width:100%;height:46px;display:block;color:var(--bg);}
+.modal-close{position:absolute;top:16px;right:16px;background:var(--accent);border:2px solid var(--gold-l);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;color:#FFF;z-index:10;box-shadow:0 4px 12px rgba(230,57,70,.45);font-weight:700;}
+.modal-body{padding:8px 22px 24px;flex-grow:1;}
+.modal-header{margin-bottom:20px;text-align:center;}
+.modal-title-row{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px;}
+.modal-title{font-family:var(--f-d);font-size:1.9rem;font-weight:700;line-height:1.15;color:var(--blue);}
+.modal-price{font-size:1.25rem;padding:4px 18px;}
+.modal-desc{color:var(--text2);font-size:.95rem;line-height:1.5;}
+.modal-tags{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:0 0 18px;}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px;}
+.info-item{background:var(--surface);padding:12px 6px;border-radius:4px;text-align:center;border:1.5px solid var(--gold);box-shadow:0 3px 10px rgba(212,160,23,.18);}
+.info-item .label{font-family:var(--f-k);font-size:.62rem;text-transform:uppercase;color:var(--gold);font-weight:700;letter-spacing:.08em;}
+.info-item .value{font-family:var(--f-d);font-size:1.1rem;font-weight:700;margin-top:2px;color:var(--blue);}
+.detail-section{margin-bottom:22px;}
+.detail-title,.info-card h3{display:flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-k);font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);font-weight:700;margin-bottom:10px;padding:0;}
+.detail-title::before,.detail-title::after,.info-card h3::before,.info-card h3::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.detail-title::after,.info-card h3::after{transform:scaleX(-1);}
+.ingredient-list{list-style:none;background:var(--surface);border:1.5px solid var(--gold);border-radius:4px;overflow:hidden;box-shadow:0 3px 10px rgba(212,160,23,.15);}
+.ingredient-list li{padding:11px 18px;font-size:.92rem;border-bottom:1px dashed var(--border);display:flex;align-items:center;gap:10px;}
+.ingredient-list li:last-child{border-bottom:none;}
+.ingredient-list li::before{content:'✦';color:var(--gold);font-size:.8rem;flex-shrink:0;}
+.origin-story{background:var(--surface);padding:16px 18px;border-radius:4px;font-family:var(--f-d);font-size:1.08rem;line-height:1.6;border:1.5px solid var(--gold);box-shadow:0 3px 10px rgba(212,160,23,.15);}
+.allergen-warning{background:var(--accent-light);color:var(--accent);padding:14px 16px;border-radius:4px;font-size:.85rem;font-weight:600;border:1.5px solid var(--accent);box-shadow:0 3px 10px rgba(230,57,70,.2);line-height:1.5;}
+.allergen-warning.none{background:var(--surface);color:var(--text2);border-color:var(--gold);box-shadow:none;}
+.allergen-warning .al-full{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--accent);border-radius:3px;padding:4px 12px 4px 6px;font-size:.85rem;margin:0 6px 6px 0;color:var(--text);}
+.allergen-warning .al-full b{background:var(--accent);color:#FFF;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--f-k);font-size:.72rem;clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);}
+.pair-row{display:flex;justify-content:space-between;align-items:center;background:var(--surface);border:1.5px solid var(--gold);border-radius:4px;padding:11px 16px;margin-bottom:8px;cursor:pointer;font-family:var(--f-d);font-size:1.05rem;color:var(--blue);box-shadow:0 2px 8px rgba(212,160,23,.12);transition:all .2s;}
+.pair-row:hover{transform:translateX(2px);box-shadow:0 4px 12px rgba(212,160,23,.22);}
+.pair-row span:last-child{color:var(--accent);font-weight:700;}
+.modal-bar{position:sticky;bottom:0;background-color:var(--bg);padding:12px 0 4px;border-top:3px double var(--gold);}
+.modal-bar .reset-btn{width:100%;padding:14px;font-size:.95rem;display:block;}
+.list-bar{position:fixed;left:16px;right:16px;bottom:16px;max-width:688px;margin:0 auto;z-index:200;background:linear-gradient(180deg,#2E78C0,#1E5FA8);color:var(--gold-l);border:2px solid var(--gold-l);border-radius:6px;padding:14px 18px;display:none;justify-content:space-between;font-family:var(--f-k);font-size:.95rem;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(30,95,168,.5);}
+body.has-list{padding-bottom:84px;}
+.li-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed var(--border);font-size:.92rem;}
+.li-row .nm{flex:1;min-width:0;font-family:var(--f-d);font-size:1.05rem;}
+.qty{display:flex;align-items:center;gap:8px;}
+.qty button{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--gold);background:var(--surface);color:var(--blue);font-size:1rem;font-weight:700;cursor:pointer;transition:all .2s;}
+.qty button:hover{background:var(--gold-l);}
+.li-total{display:flex;justify-content:space-between;font-family:var(--f-d);font-size:1.3rem;font-weight:700;padding:14px 0;color:var(--blue);}
+.cash-note{background:linear-gradient(135deg,#FFE89A,#FFC93C);border:3px solid var(--accent);border-radius:8px;padding:16px 18px;margin:12px 0;text-align:center;font-family:var(--f-k);font-weight:700;color:#2B1D00;font-size:.95rem;line-height:1.4;box-shadow:0 6px 18px rgba(230,57,70,.3);display:none;}
+.cash-note::before{content:'📢 ';font-size:1.2rem;}
+.cash-note.show{display:block;animation:pulseNote 2s ease-in-out infinite;}
+@keyframes pulseNote{0%,100%{transform:scale(1);}50%{transform:scale(1.02);}}
+.info-section{padding:0 16px 16px;max-width:720px;margin:0 auto;}
+.info-card{background-color:var(--surface);background-image:var(--pat);border:2px solid var(--gold);border-radius:6px;padding:16px;margin-bottom:14px;box-shadow:0 6px 18px rgba(212,160,23,.2);}
+.info-row{display:flex;gap:12px;padding:8px 0;border-bottom:1px dashed var(--border);font-size:.88rem;}
+.info-row:last-child{border-bottom:none;}
+.info-row b{min-width:96px;color:var(--gold);font-family:var(--f-k);font-weight:700;font-size:.78rem;}
+.info-row a{color:var(--accent);text-decoration:none;font-weight:700;}
+.stars{display:flex;gap:6px;justify-content:center;margin:10px 0;}
+.star{background:none;border:none;font-size:2.1rem;line-height:1;color:var(--text3);cursor:pointer;padding:2px;transition:transform .15s;}
+.star:hover{transform:scale(1.15);}
+.star.on{color:var(--gold);text-shadow:0 0 10px rgba(255,217,102,.8);}
+.rate-card{text-align:center;}
+.rate-card p{font-size:.85rem;color:var(--text2);margin-bottom:12px;}
+dialog.sheet{top:auto;bottom:0;height:auto;max-height:90vh;padding:22px 20px 24px;overflow-y:auto;border-top:3px double var(--gold);}
+dialog.sheet h2{font-family:var(--f-d);font-size:1.5rem;text-align:center;color:var(--blue);}
+dialog.sheet p.sub{text-align:center;color:var(--text2);font-size:.85rem;margin-bottom:8px;}
+dialog.sheet textarea{width:100%;min-height:80px;border-radius:4px;border:1.5px solid var(--gold);background:var(--surface);color:var(--text);padding:10px;font-family:inherit;font-size:.9rem;margin:8px 0 12px;resize:vertical;}
+.sheet .reset-btn{width:100%;padding:12px;margin-top:4px;}
+.sheet .close-link{display:block;text-align:center;margin-top:12px;color:var(--text2);font-size:.9rem;cursor:pointer;background:none;border:none;width:100%;font-family:inherit;}
+#legendNote{font-family:var(--f-d);font-size:.95rem!important;}
+.orn{display:block;color:var(--gold);}
+.site-foot{max-width:720px;margin:0 auto;padding:6px 16px 40px;text-align:center;}
+.site-foot .orn{width:160px;height:14px;margin:0 auto 10px;}
+.foot-ar{font-family:var(--f-d);font-size:1.5rem;color:var(--gold);direction:rtl;}
+.foot-tr{font-family:var(--f-d);font-size:1.15rem;font-style:italic;color:var(--blue);}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="star8" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="20" height="20"/><rect x="6" y="6" width="20" height="20" transform="rotate(45 16 16)"/><circle cx="16" cy="16" r="3" fill="currentColor"/></g></symbol>
+<symbol id="orn" viewBox="0 0 160 14"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M0 7H60M100 7H160"/><path d="M80 0l7 7-7 7-7-7z" fill="currentColor"/><path d="M64 7l4-4 4 4-4 4zM88 7l4-4 4 4-4 4z"/></g></symbol>
+<symbol id="tulip" viewBox="0 0 24 30"><path d="M12 2c-4 3-5 8-3 12 1 2 5 2 6 0 2-4 1-9-3-12z" fill="currentColor"/><path d="M12 15v14M12 24c-4 0-6-3-6-6 4 0 6 3 6 6zM12 24c4 0 6-3 6-6-4 0-6 3-6 6z" fill="none" stroke="#2E9E50" stroke-width="1.6"/></symbol>
+<symbol id="lamp" viewBox="0 0 40 96"><g fill="none" stroke="#FFD966" stroke-width="1.4"><path d="M20 0v26"/><path d="M20 26c-9 0-12 6-12 10h24c0-4-3-10-12-10z" fill="#E63946"/><path d="M10 36l-4 24c0 8 6 14 14 14s14-6 14-14l-4-24z" fill="#FFE89A" fill-opacity=".9"/><path d="M20 36v38M13 36l-2 36M27 36l2 36"/><path d="M20 74v10" /><circle cx="20" cy="88" r="4" fill="#FFD966"/></g></symbol>
+</defs></svg>
+
+<header>
+<div class="logo"><svg class="logo-star"><use href="#star8"/></svg><div>Kültür <span>Kebaphaus</span></div></div>
+<div class="header-actions">
+<a class="rate-btn" href="https://www.google.com/search?sca_esv=0bcf3a4e1a9be3bd&cs=1&output=search&kgmid=/g/11sl99cflw&q=K%C3%BClt%C3%BCr+Kebaphaus&shem=dlvs1,epsd1,esd2e,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=90f205296a1e9930&utm_source=dlvs1,epsd1,esd2e,ltae,rimspwouoe,sh/x/loc/uni/m1/1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEt3RHlDN1RlRHZvcFcxeGotUE52RlFvT28wZE1uSlF4cjBZbjY5WF9wazhjTEsxa1pEMF80SThnMS02OUgwRVdKeE50Qmkxb0lFVGlVVVFXektjS0poSXhic1lTNUFYbXhZMHY4NUc1dmMtREhrc2RnEhd3Y3E2YXZ2NkI0Njl4YzhQN05XM3NBMBoiQURzcjlmUnA0VGlPWjRsa2lwb1VvajZibnhWXzd1ZExVdxIEODA1MRoBMyoAMAA4AUAAGAAgvLmU8Q5KAhAB" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span id="rateHeaderTxt">Bewerten</span></a>
+<div class="lang-switcher">
+<button class="lang-btn active" data-lang="de">DE</button>
+<button class="lang-btn" data-lang="en">EN</button>
+<button class="lang-btn" data-lang="tr">TR</button>
+</div>
+<button class="theme-toggle" id="themeBtn"><svg id="themeIcon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+</div>
+</header>
+<section class="hero">
+<svg class="lantern l" viewBox="0 0 40 96"><use href="#lamp"/></svg><svg class="lantern r" viewBox="0 0 40 96"><use href="#lamp"/></svg>
+<svg class="mihrab" viewBox="0 0 300 236" preserveAspectRatio="none"><defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E78C0"/><stop offset="1" stop-color="#1E5FA8"/></linearGradient><pattern id="hp" width="30" height="30" patternUnits="userSpaceOnUse"><g fill="none" stroke="#FFD966" stroke-opacity=".4"><rect x="7" y="7" width="16" height="16"/><rect x="7" y="7" width="16" height="16" transform="rotate(45 15 15)"/></g></pattern></defs><path d="M4 236V106C4 64 92 34 150 4C208 34 296 64 296 106V236Z" fill="url(#hg)" stroke="#FFD966" stroke-width="2.5" vector-effect="non-scaling-stroke"/><path d="M4 236V106C4 64 92 34 150 4C208 34 296 64 296 106V236Z" fill="url(#hp)"/><path d="M14 236V108C14 74 96 48 150 20C204 48 286 74 286 108V236" fill="none" stroke="#FFD966" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>
+<div class="hero-txt"><div class="hero-ar">كولتور كباب هاوس</div><div class="hero-title">Kültür Kebaphaus</div><div class="hero-sub" id="heroSub">Türkische Küche · Bremen</div><svg class="hero-orn"><use href="#orn"/></svg><div class="hero-wel"><span id="heroWel">Willkommen</span> · أهلاً وسهلاً</div></div>
+</section>
+<div class="tulips"><svg style="color:#E63946"><use href="#tulip"/></svg><svg style="color:#FFD966"><use href="#tulip"/></svg><svg style="color:#17A9B8"><use href="#tulip"/></svg><svg style="color:#FFD966"><use href="#tulip"/></svg><svg style="color:#E63946"><use href="#tulip"/></svg></div>
+
+<div class="search-container">
+<div class="search-box">
+<svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<input type="text" id="searchInput" placeholder="Gericht suchen...">
+</div>
+</div>
+
+<div class="filters-wrapper">
+<div class="tabs-row" id="categoryTabs">
+<button class="tab-btn active" data-cat="all">Alle</button>
+<button class="tab-btn" data-cat="meze">Meze</button>
+<button class="tab-btn" data-cat="soup">Suppen & Salate</button>
+<button class="tab-btn" data-cat="kebap">Kebap & Grill</button>
+<button class="tab-btn" data-cat="pide">Pide</button>
+<button class="tab-btn" data-cat="desserts">Desserts</button>
+<button class="tab-btn" data-cat="drinks">Getränke</button>
+</div>
+<div class="tabs-row" id="dietaryTabs">
+<button class="tab-btn dietary" data-diet="chef">★ Empfehlung</button>
+<button class="tab-btn dietary" data-diet="vegetarian">Vegetarisch</button>
+<button class="tab-btn dietary" data-diet="vegan">Vegan</button>
+<button class="tab-btn dietary" data-diet="glutenfree">Glutenfrei</button>
+</div>
+</div>
+
+<div class="toolbar"><div class="result-count" id="resultCount">Lade...</div><select class="sort-select" id="sortSelect"><option value="mix">Mix</option><option value="asc">€ ↑</option><option value="desc">€ ↓</option></select></div>
+<div class="menu-list" id="menuGrid"></div>
+<div class="empty-state" id="emptyState" style="display:none;">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<h3>Keine Ergebnisse gefunden</h3>
+<p>Versuchen Sie einen anderen Suchbegriff oder entfernen Sie Filter.</p>
+<button class="reset-btn" id="resetBtn">Filter zurücksetzen</button>
+</div>
+
+<div class="info-section">
+<p id="legendNote" style="font-size:.75rem;color:var(--text2);text-align:center;padding:0 4px 14px;"></p>
+<div class="info-card" id="infoCard" style="display:none"><h3 id="infoTitle"></h3><div id="infoBody"></div></div>
+<div class="info-card rate-card"><h3 id="rateCardTitle">Wie hat es geschmeckt?</h3><div class="stars" id="cardStars"></div><p id="rateCardSub"></p><a class="reset-btn" href="https://www.google.com/search?sca_esv=0bcf3a4e1a9be3bd&cs=1&output=search&kgmid=/g/11sl99cflw&q=K%C3%BClt%C3%BCr+Kebaphaus&shem=dlvs1,epsd1,esd2e,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=90f205296a1e9930&utm_source=dlvs1,epsd1,esd2e,ltae,rimspwouoe,sh/x/loc/uni/m1/1#sv=CAESzQEKuQEStgEKd0FKaVQ0dEt3RHlDN1RlRHZvcFcxeGotUE52RlFvT28wZE1uSlF4cjBZbjY5WF9wazhjTEsxa1pEMF80SThnMS02OUgwRVdKeE50Qmkxb0lFVGlVVVFXektjS0poSXhic1lTNUFYbXhZMHY4NUc1dmMtREhrc2RnEhd3Y3E2YXZ2NkI0Njl4YzhQN05XM3NBMBoiQURzcjlmUnA0VGlPWjRsa2lwb1VvajZibnhWXzd1ZExVdxIEODA1MRoBMyoAMAA4AUAAGAAgvLmU8Q5KAhAB" target="_blank" rel="noopener noreferrer" id="rateGoogleCard">⭐ Auf Google bewerten</a></div>
+</div>
+
+<footer class="site-foot"><svg class="orn"><use href="#orn"/></svg><div class="foot-ar">بالهناء والشفاء</div><div class="foot-tr">Afiyet olsun</div></footer>
+
+<button class="list-bar" id="listBar"><span id="listBarTxt"></span><span id="listBarTotal"></span></button>
+<dialog id="listModal" class="sheet">
+<h2 id="listTitle">Merkliste</h2><p class="sub" id="listNote"></p>
+<div id="listBody"></div>
+<div class="cash-note" id="cashNote"></div>
+<div style="margin:8px 0;"><label class="sub" id="tableLbl" style="display:block;text-align:left;"></label><input id="tableNo" class="sort-select" style="width:100%;padding:10px;font-size:.95rem;" inputmode="numeric" maxlength="12"></div>
+<button class="reset-btn" id="waBtn" style="display:none;margin-bottom:8px;"></button>
+<button class="reset-btn secondary" id="listClear"></button>
+<button class="close-link" id="listClose">✕</button>
+</dialog>
+
+<dialog id="itemModal">
+<div class="modal-content">
+<div class="modal-image-container">
+<img src="" alt="" class="modal-image" id="modalImage">
+<svg class="arch-cut" viewBox="0 0 400 46" preserveAspectRatio="none"><path d="M0 46V38C120 38 165 30 200 4C235 30 280 38 400 38V46Z" fill="currentColor"/><path d="M0 38C120 38 165 30 200 4C235 30 280 38 400 38" fill="none" stroke="#D4A017" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+<button class="modal-close" id="modalClose">✕</button>
+</div>
+<div class="modal-body">
+<div class="modal-header">
+<div class="modal-title-row">
+<h2 class="modal-title" id="modalTitle">-</h2>
+<span class="modal-price" id="modalPrice">-</span>
+</div>
+<p class="modal-desc" id="modalDesc">-</p>
+</div>
+<div class="modal-tags" id="modalDiet"></div>
+<div class="detail-section"><div class="detail-title" id="tAl">Allergene</div><div class="allergen-warning" id="modalAllergens"></div></div>
+<div class="info-grid">
+<div class="info-item"><div class="label">Zubereitung</div><div class="value" id="modalPrep">--</div></div>
+<div class="info-item"><div class="label">Kalorien</div><div class="value" id="modalCal">--</div></div>
+<div class="info-item"><div class="label">Schärfe</div><div class="value" id="modalSpice">--</div></div>
+</div>
+<div class="detail-section"><div class="detail-title" id="tIng">Zutaten</div><ul class="ingredient-list" id="modalIngredients"></ul></div>
+<div class="detail-section" id="pairSec"><div class="detail-title" id="tPair">Dazu passt</div><div id="modalPair"></div></div>
+<div class="detail-section"><div class="detail-title" id="tOrigin">Herkunft</div><div class="origin-story" id="modalOrigin"></div></div>
+<div class="modal-bar"><button class="reset-btn" id="addBtn"></button><button class="reset-btn secondary" id="shareBtn" style="margin-top:8px;"></button></div>
+</div>
+</div>
+</dialog>
+
+<script>
+var IMG = {
+  adana:'https://images.unsplash.com/photo-1544025162-d76694265947?w=400',
+  doner:'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400',
+  falafel:'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400',
+  pide:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=400',
+  baklava:'https://images.unsplash.com/photo-1598110750624-207050c4f28c?w=400',
+  meze:'https://images.unsplash.com/photo-1571212515416-fef01fc43637?w=400',
+  salad:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400',
+  grill:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400',
+  dessert:'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400',
+  borek:'https://images.unsplash.com/photo-1625938145310-9b3c6e0a7b5f?w=400',
+  imam:'https://images.unsplash.com/photo-1544025162-d76694265947?w=400',
+  sarma:'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400',
+  sebze:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400',
+  sebzepide:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=400',
+  kabak:'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400',
+  plate:'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400',
+  cacik:'https://images.unsplash.com/photo-1571212515416-fef01fc43637?w=400',
+  kisir:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400',
+  lentil:'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400',
+  cobans:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400',
+  hellim:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400',
+  kazan:'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400',
+  ayran:'https://images.unsplash.com/photo-1571212515416-fef01fc43637?w=400',
+  salgam:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400',
+  tea:'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400',
+  coffee:'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400',
+  sahlep:'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400',
+  lemonade:'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400',
+  appletea:'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400',
+  soda:'https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400',
+  water:'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400'
+};
+
+var RESTAURANT = {
+  name: 'Kültür Kebaphaus',
+  address: 'Bahnhofstraße 36, 28195 Bremen',
+  phone: '0421 1652758',
+  whatsapp: '',
+  maps: '',
+  hours: {
+    de:'Mo–Do: 10:30–23:30\nFr: 10:30–02:00\nSa: 10:30–01:30\nSo: 10:30–01:30',
+    en:'Mon–Thu: 10:30–23:30\nFri: 10:30–02:00\nSat: 10:30–01:30\nSun: 10:30–01:30',
+    tr:'Pzt–Per: 10:30–23:30\nCum: 10:30–02:00\nCmt: 10:30–01:30\nPaz: 10:30–01:30'
+  },
+  payment: {de:'Barzahlung, EC-Karte', en:'Cash, debit card', tr:'Nakit, banka kartı'},
+  wifi: '', delivery: '', note: {de:'', en:'', tr:''},
+  impressum: '', datenschutz: ''
+};
+var CHEF = ['k3','k1','k8','d2','p3'];
+var TODAY_ID = '';
+var ADD = {};
+var ADD_N = {1:{de:'mit Farbstoff',en:'with colouring',tr:'renklendirici içerir'},2:{de:'mit Konservierungsstoff',en:'with preservative',tr:'koruyucu içerir'},3:{de:'mit Antioxidationsmittel',en:'with antioxidant',tr:'antioksidan içerir'},4:{de:'mit Geschmacksverstärker',en:'with flavour enhancer',tr:'lezzet artırıcı içerir'},5:{de:'geschwefelt',en:'sulphured',tr:'sülfürlü'},6:{de:'geschwärzt',en:'blackened',tr:'karartılmış'},7:{de:'gewachst',en:'waxed',tr:'mumlanmış'},8:{de:'mit Phosphat',en:'with phosphate',tr:'fosfat içerir'},9:{de:'mit Süßungsmittel',en:'with sweetener',tr:'tatlandırıcı içerir'}};
+function esc(x){ return String(x).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function safeUrl(u){ return /^https?:\/\//i.test(u) ? esc(u) : '#'; }
+var FALLBACK = IMG.plate;
+function imgErr(el){ if(el.src!==FALLBACK){ el.onerror=null; el.src=FALLBACK; } }
+var DISHES = [
+{id:'m1',cat:'meze',img:IMG.meze,diet:['vegetarian','glutenfree'],badge:'VEG',price:'6,50 €',name:{de:'Haydari',en:'Haydari',tr:'Haydari'},desc:{de:'Cremiger Joghurt mit Knoblauch und frischen Kräutern',en:'Creamy yogurt with garlic and fresh herbs',tr:'Sarımsaklı ve taze otlu kremalı yoğurt'},ing:{de:['Joghurt','Knoblauch','Petersilie','Minze','Butter'],en:['Yogurt','Garlic','Parsley','Mint','Butter'],tr:['Yoğurt','Sarımsak','Maydanoz','Nane','Tereyağı']},prep:'10 Min',cal:'180',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Haydari ist eine der beliebtesten kalten Meze-Vorspeisen der Türkei.',en:'Haydari is one of the most popular cold meze starters in Turkey.',tr:'Haydari, Türkiye\'nin en sevilen soğuk mezelerinden biridir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'m2',cat:'meze',img:IMG.meze,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'7,00 €',name:{de:'Hummus',en:'Hummus',tr:'Humus'},desc:{de:'Kichererbsenpüree mit Tahini, Zitrone und Knoblauch',en:'Chickpea puree with tahini, lemon and garlic',tr:'Tahinli, limonlu ve sarımsaklı nohut püresi'},ing:{de:['Kichererbsen','Tahini','Zitronensaft','Knoblauch','Kümmel','Olivenöl'],en:['Chickpeas','Tahini','Lemon juice','Garlic','Cumin','Olive oil'],tr:['Nohut','Tahin','Limon suyu','Sarımsak','Kimyon','Zeytinyağı']},prep:'10 Min',cal:'200',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Hummus ist ein cremiges Kichererbsenpüree aus der Levante.',en:'Hummus is a creamy chickpea puree from the Levant.',tr:'Humus, Levant usulü kremalı nohut püresidir.'},all:{de:'Enthält Sesam (N)',en:'Contains Sesame (N)',tr:'Susam (N) içerir'}},
+{id:'m3',cat:'meze',img:IMG.falafel,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'11,90 €',name:{de:'Falafel Teller',en:'Falafel Plate',tr:'Falafel Tabağı'},desc:{de:'Hausgemachte Kichererbsen-Falafel mit Hummus, Tahini und Salat',en:'Homemade chickpea falafel with hummus, tahini and salad',tr:'Ev yapımı nohut falafel, humus, tahin ve salata'},ing:{de:['Kichererbsen','Kräuter','Zwiebeln','Knoblauch','Tahini','Hummus'],en:['Chickpeas','Herbs','Onions','Garlic','Tahini','Hummus'],tr:['Nohut','Otlar','Soğan','Sarımsak','Tahin','Humus']},prep:'15 Min',cal:'480',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Falafel hat seine Wurzeln im Nahen Osten.',en:'Falafel has its roots in the Middle East.',tr:'Falafel, Orta Doğu kökenlidir.'},all:{de:'Enthält Sesam (N)',en:'Contains Sesame (N)',tr:'Susam (N) içerir'}},
+{id:'m4',cat:'meze',img:IMG.meze,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'6,00 €',name:{de:'Acılı Ezme',en:'Acılı Ezme',tr:'Acılı Ezme'},desc:{de:'Scharfe Tomaten-Paprika-Paste mit Olivenöl',en:'Spicy tomato-pepper paste with olive oil',tr:'Zeytinyağlı acılı domates-biber ezmesi'},ing:{de:['Tomaten','Peperoncini','Knoblauch','Petersilie','Zwiebeln','Olivenöl'],en:['Tomatoes','Peperoncini','Garlic','Parsley','Onions','Olive oil'],tr:['Domates','Peperoncini','Sarımsak','Maydanoz','Soğan','Zeytinyağı']},prep:'10 Min',cal:'120',spice:{de:'Scharf',en:'Hot',tr:'Acı'},origin:{de:'Acılı Ezme ist ein unverzichtbarer Bestandteil jedes türkischen Meze-Tisches.',en:'Acılı Ezme is essential to every Turkish meze table.',tr:'Acılı Ezme, her Türk meze sofrasının vazgeçilmezidir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'m5',cat:'meze',img:IMG.borek,diet:['vegetarian'],badge:'VEG',price:'7,50 €',name:{de:'Sigara Böreği',en:'Sigara Böreği',tr:'Sigara Böreği'},desc:{de:'Knusprige Käseröllchen mit Petersilie',en:'Crispy cheese rolls with parsley',tr:'Maydanozlu çıtır peynir ruloları'},ing:{de:['Yufka-Teig','Feta-Käse','Petersilie','Ei'],en:['Filo pastry','Feta cheese','Parsley','Egg'],tr:['Yufka','Beyaz peynir','Maydanoz','Yumurta']},prep:'20 Min',cal:'320',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Sigara Böreği sind knusprige, frittierte Teigröllchen.',en:'Sigara Böreği are crispy fried pastry rolls.',tr:'Sigara Böreği, çıtır kızarmış hamur rulolarıdır.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'k1',cat:'kebap',img:IMG.adana,diet:[],badge:'TOP',price:'16,80 €',name:{de:'Adana Kebap',en:'Adana Kebab',tr:'Adana Kebap'},desc:{de:'Handgehacktes Lammfleisch, scharf gewürzt, über Holzkohle gegrillt',en:'Hand-minced lamb, spicy, grilled over charcoal',tr:'El yapımı kıyma, baharatlı, kömür ateşinde ızgara'},ing:{de:['Lammfleisch','Chili','Knoblauch','Paprika','Fladenbrot','Gegrillte Tomaten'],en:['Lamb','Chili','Garlic','Paprika','Flatbread','Grilled tomatoes'],tr:['Kıyma','Acı biber','Sarımsak','Kırmızı biber','Pide','Izgara domates']},prep:'25 Min',cal:'680',spice:{de:'Scharf',en:'Hot',tr:'Acı'},origin:{de:'Der Adana Kebap stammt aus der Region Adana.',en:'Adana Kebab originates from the Adana region.',tr:'Adana Kebap, Adana bölgesinden gelir.'},all:{de:'Enthält Gluten (A), Ei (C)',en:'Contains Gluten (A), Egg (C)',tr:'Gluten (A), Yumurta (C) içerir'}},
+{id:'k2',cat:'kebap',img:IMG.doner,diet:[],badge:'TOP',price:'14,50 €',name:{de:'Döner Teller',en:'Döner Plate',tr:'Döner Tabağı'},desc:{de:'Kalbfleisch-Döner mit Reis, Salat, Zwiebeln und Joghurtsoße',en:'Veal döner with rice, salad, onions and yogurt sauce',tr:'Pilav, salata, soğan ve yoğurt soslu dana döner'},ing:{de:['Kalbfleisch','Reis','Salat','Zwiebeln','Joghurtsoße'],en:['Veal','Rice','Salad','Onions','Yogurt sauce'],tr:['Dana eti','Pilav','Salata','Soğan','Yoğurt sosu']},prep:'15 Min',cal:'750',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Döner ist ein Wahrzeichen der türkischen Küche.',en:'Döner is a landmark of Turkish cuisine.',tr:'Döner, Türk mutfağının simgesidir.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'k3',cat:'kebap',img:IMG.doner,diet:[],badge:'STAR',price:'17,90 €',name:{de:'İskender Kebap',en:'İskender Kebab',tr:'İskender Kebap'},desc:{de:'Döner auf Fladenbrot mit Joghurt und Tomatensauce',en:'Döner on flatbread with yogurt and tomato sauce',tr:'Yoğurtlu ve domates soslu pideli döner'},ing:{de:['Kalbfleisch-Döner','Fladenbrot','Joghurt','Tomatensauce','Butter'],en:['Veal döner','Flatbread','Yogurt','Tomato sauce','Butter'],tr:['Dana döner','Pide','Yoğurt','Domates sosu','Tereyağı']},prep:'20 Min',cal:'850',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'İskender Kebap wurde 1867 in Bursa erfunden.',en:'İskender Kebab was invented in 1867 in Bursa.',tr:'İskender Kebap, 1867\'de Bursa\'da icat edildi.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'k4',cat:'kebap',img:IMG.grill,diet:['glutenfree'],badge:'GF',price:'15,50 €',name:{de:'Şiş Kebap',en:'Şiş Kebab',tr:'Şiş Kebap'},desc:{de:'Marinierte Lammfleischwürfel am Spieß',en:'Marinated lamb cubes on skewer',tr:'Şişte marine kuzu eti'},ing:{de:['Lammfleisch','Zwiebeln','Paprika','Tomaten','Joghurt','Marinade'],en:['Lamb','Onions','Peppers','Tomatoes','Yogurt','Marinade'],tr:['Kuzu eti','Soğan','Biber','Domates','Yoğurt','Marine']},prep:'30 Min',cal:'580',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Şiş Kebap ist ein klassischer Grillspieß.',en:'Şiş Kebab is a classic grill skewer.',tr:'Şiş Kebap, klasik bir ızgara şiştir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'k5',cat:'kebap',img:IMG.grill,diet:['glutenfree'],badge:'GF',price:'18,50 €',name:{de:'Kuzu Pirzola',en:'Lamb Chops',tr:'Kuzu Pirzola'},desc:{de:'Gegrillte Lammkoteletts mit Kräutern',en:'Grilled lamb chops with herbs',tr:'Otlu ızgara kuzu pirzola'},ing:{de:['Lammkoteletts','Rosmarin','Knoblauch','Olivenöl','Gegrilltes Gemüse'],en:['Lamb chops','Rosemary','Garlic','Olive oil','Grilled vegetables'],tr:['Kuzu pirzola','Biberiye','Sarımsak','Zeytinyağı','Izgara sebze']},prep:'20 Min',cal:'680',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Kuzu Pirzola sind gegrillte Lammkoteletts.',en:'Kuzu Pirzola are grilled lamb chops.',tr:'Kuzu Pirzola, ızgara kuzu pirzolalarıdır.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'p1',cat:'pide',img:IMG.pide,diet:['vegetarian'],badge:'VEG',price:'10,50 €',name:{de:'Kaşarlı Pide',en:'Kaşar Pide',tr:'Kaşarlı Pide'},desc:{de:'Türkisches Fladenbrot mit geschmolzenem Kaşar-Käse',en:'Turkish flatbread with melted kaşar cheese',tr:'Eritilmiş kaşar peynirli Türk pidesi'},ing:{de:['Pide-Teig','Kaşar-Käse','Butter'],en:['Pide dough','Kaşar cheese','Butter'],tr:['Pide hamuru','Kaşar peyniri','Tereyağı']},prep:'15 Min',cal:'620',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Kaşarlı Pide ist die schlichteste Pide-Variante.',en:'Kaşar Pide is the simplest pide variety.',tr:'Kaşarlı Pide, en basit pide çeşididir.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'p2',cat:'pide',img:IMG.pide,diet:[],badge:'TOP',price:'12,50 €',name:{de:'Kıymalı Pide',en:'Minced Pide',tr:'Kıymalı Pide'},desc:{de:'Pide mit gewürztem Rinderhackfleisch',en:'Pide with seasoned minced beef',tr:'Baharatlı dana kıymalı pide'},ing:{de:['Pide-Teig','Rinderhack','Zwiebeln','Tomaten','Paprika'],en:['Pide dough','Minced beef','Onions','Tomatoes','Peppers'],tr:['Pide hamuru','Dana kıyma','Soğan','Domates','Biber']},prep:'20 Min',cal:'680',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Kıymalı Pide ist eine der klassischen Pide-Varianten.',en:'Kıymalı Pide is one of the classic pide varieties.',tr:'Kıymalı Pide, klasik pide çeşitlerinden biridir.'},all:{de:'Enthält Gluten (A)',en:'Contains Gluten (A)',tr:'Gluten (A) içerir'}},
+{id:'p3',cat:'pide',img:IMG.pide,diet:[],badge:'STAR',price:'14,50 €',name:{de:'Sucuklu Pide',en:'Sucuk Pide',tr:'Sucuklu Pide'},desc:{de:'Pide mit türkischer Knoblauchwurst Sucuk und Käse',en:'Pide with Turkish garlic sausage sucuk and cheese',tr:'Türk sucuğu ve kaşarlı pide'},ing:{de:['Pide-Teig','Sucuk','Kaşar-Käse','Tomaten'],en:['Pide dough','Sucuk','Kaşar cheese','Tomatoes'],tr:['Pide hamuru','Sucuk','Kaşar peyniri','Domates']},prep:'20 Min',cal:'750',spice:{de:'Mittel',en:'Medium',tr:'Orta'},origin:{de:'Sucuklu Pide kombiniert Sucuk mit Käse.',en:'Sucuk Pide combines sucuk with cheese.',tr:'Sucuklu Pide, sucuk ve peyniri birleştirir.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'p4',cat:'pide',img:IMG.pide,diet:['vegetarian'],badge:'VEG',price:'11,50 €',name:{de:'Ispanaklı Pide',en:'Spinach Pide',tr:'Ispanaklı Pide'},desc:{de:'Pide mit frischem Spinat und würzigem Käse',en:'Pide with fresh spinach and savory cheese',tr:'Taze ıspanak ve baharatlı peynirli pide'},ing:{de:['Pide-Teig','Spinat','Feta-Käse','Zwiebeln','Butter'],en:['Pide dough','Spinach','Feta cheese','Onions','Butter'],tr:['Pide hamuru','Ispanak','Beyaz peynir','Soğan','Tereyağı']},prep:'20 Min',cal:'580',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Ispanaklı Pide ist eine vegetarische Variante.',en:'Spinach Pide is a vegetarian variety.',tr:'Ispanaklı Pide, vejetaryen bir çeşittir.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'p5',cat:'pide',img:IMG.pide,diet:[],badge:'TOP',price:'9,50 €',name:{de:'Lahmacun',en:'Lahmacun',tr:'Lahmacun'},desc:{de:'Hauchdünner Teig mit würzigem Hackfleisch und Zitrone',en:'Paper-thin dough with spicy minced meat and lemon',tr:'İnce hamur, baharatlı kıyma ve limon'},ing:{de:['Dünner Teig','Rinderhack','Zwiebeln','Petersilie','Paprika','Zitrone'],en:['Thin dough','Minced beef','Onions','Parsley','Peppers','Lemon'],tr:['İnce hamur','Dana kıyma','Soğan','Maydanoz','Biber','Limon']},prep:'15 Min',cal:'480',spice:{de:'Mittel',en:'Medium',tr:'Orta'},origin:{de:'Lahmacun wird oft als "türkische Pizza" bezeichnet.',en:'Lahmacun is often called "Turkish pizza".',tr:'Lahmacun, genellikle "Türk pizzası" olarak adlandırılır.'},all:{de:'Enthält Gluten (A)',en:'Contains Gluten (A)',tr:'Gluten (A) içerir'}},
+{id:'d1',cat:'desserts',img:IMG.baklava,diet:['vegetarian'],badge:'VEG',price:'6,50 €',name:{de:'Baklava',en:'Baklava',tr:'Baklava'},desc:{de:'Hauchdünner Blätterteig mit Pistazien und Honigsirup',en:'Thin filo pastry with pistachios and honey syrup',tr:'Antep fıstıklı ve ballı ince yufka'},ing:{de:['Filoteig','Pistazien','Butter','Zuckersirup'],en:['Filo pastry','Pistachios','Butter','Sugar syrup'],tr:['Yufka','Antep fıstığı','Tereyağı','Şeker şurubu']},prep:'10 Min',cal:'420',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Baklava ist das Kronjuwel der osmanischen Küche.',en:'Baklava is the crown jewel of Ottoman cuisine.',tr:'Baklava, Osmanlı mutfağının tacıdır.'},all:{de:'Enthält Gluten (A), Milch (G), Nüsse (H)',en:'Contains Gluten (A), Milk (G), Nuts (H)',tr:'Gluten (A), Süt (G), Kuruyemiş (H) içerir'}},
+{id:'d2',cat:'desserts',img:IMG.baklava,diet:['vegetarian'],badge:'VEG',price:'7,50 €',name:{de:'Künefe',en:'Künefe',tr:'Künefe'},desc:{de:'Warme Engelshaar-Teigfäden mit Käse und Sirup',en:'Warm shredded pastry with cheese and syrup',tr:'Peynirli ve şerbetli sıcak tel kadayıf'},ing:{de:['Kadayıf-Teig','Käse','Butter','Zuckersirup','Pistazien'],en:['Kadayıf pastry','Cheese','Butter','Sugar syrup','Pistachios'],tr:['Kadayıf','Peynir','Tereyağı','Şeker şurubu','Antep fıstığı']},prep:'15 Min',cal:'520',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Künefe ist ein warmes Dessert aus Hatay.',en:'Künefe is a warm dessert from Hatay.',tr:'Künefe, Hatay\'ın sıcak tatlısıdır.'},all:{de:'Enthält Gluten (A), Milch (G), Nüsse (H)',en:'Contains Gluten (A), Milk (G), Nuts (H)',tr:'Gluten (A), Süt (G), Kuruyemiş (H) içerir'}},
+{id:'d3',cat:'desserts',img:IMG.dessert,diet:['vegetarian','glutenfree'],badge:'VEG',price:'5,50 €',name:{de:'Fırın Sütlaç',en:'Baked Rice Pudding',tr:'Fırın Sütlaç'},desc:{de:'Ofengebackener Milchreis mit Karamellkruste',en:'Oven-baked rice pudding with caramel crust',tr:'Karamel kabuklu fırında sütlaç'},ing:{de:['Milch','Reis','Zucker','Vanille','Zimt'],en:['Milk','Rice','Sugar','Vanilla','Cinnamon'],tr:['Süt','Pirinç','Şeker','Vanilya','Tarçın']},prep:'45 Min',cal:'280',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Fırın Sütlaç ist traditioneller ofengebackener Milchreis.',en:'Fırın Sütlaç is traditional oven-baked rice pudding.',tr:'Fırın Sütlaç, geleneksel fırında sütlaçtır.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'d4',cat:'desserts',img:IMG.baklava,diet:['vegetarian','glutenfree'],badge:'VEG',price:'6,00 €',name:{de:'Maraş Dondurma',en:'Maraş Ice Cream',tr:'Maraş Dondurma'},desc:{de:'Zähflüssiges Sahneeis mit Salep und Mastix',en:'Chewy ice cream with salep and mastic',tr:'Salep ve damla sakızlı dondurma'},ing:{de:['Milch','Sahne','Zucker','Salep','Mastix'],en:['Milk','Cream','Sugar','Salep','Mastic'],tr:['Süt','Kaymak','Şeker','Salep','Damla sakızı']},prep:'5 Min',cal:'320',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Maraş Dondurma stammt aus Kahramanmaraş.',en:'Maraş Ice Cream comes from Kahramanmaraş.',tr:'Maraş Dondurması, Kahramanmaraş\'tan gelir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'d5',cat:'desserts',img:IMG.dessert,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'5,00 €',name:{de:'Helva',en:'Halva',tr:'Helva'},desc:{de:'Traditionelle Sesam-Honig-Süßigkeit aus Tahini',en:'Traditional sesame-honey sweet from tahini',tr:'Tahinden geleneksel susam-bal tatlısı'},ing:{de:['Tahini','Zucker','Zitronensaft','Vanille'],en:['Tahini','Sugar','Lemon juice','Vanilla'],tr:['Tahin','Şeker','Limon suyu','Vanilya']},prep:'15 Min',cal:'420',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Helva ist eine traditionelle Süßigkeit aus Tahini.',en:'Halva is a traditional sweet of tahini.',tr:'Helva, tahinden yapılan geleneksel bir tatlıdır.'},all:{de:'Enthält Sesam (N)',en:'Contains Sesame (N)',tr:'Susam (N) içerir'}},
+{id:'dr1',cat:'drinks',img:IMG.ayran,diet:['vegetarian','glutenfree'],badge:'VEG',price:'3,00 €',name:{de:'Ayran',en:'Ayran',tr:'Ayran'},desc:{de:'Erfrischendes Joghurtgetränk mit Salz und Minze',en:'Refreshing yogurt drink with salt and mint',tr:'Tuzlu ve naneli ferahlatıcı yoğurt içeceği'},ing:{de:['Joghurt','Wasser','Salz','Minze'],en:['Yogurt','Water','Salt','Mint'],tr:['Yoğurt','Su','Tuz','Nane']},prep:'3 Min',cal:'80',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Ayran ist das traditionelle Joghurtgetränk der Türkei.',en:'Ayran is Turkey\'s traditional yogurt drink.',tr:'Ayran, Türkiye\'nin geleneksel yoğurt içeceğidir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'dr2',cat:'drinks',img:IMG.salgam,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'3,50 €',name:{de:'Şalgam',en:'Şalgam',tr:'Şalgam'},desc:{de:'Fermentierter Rote-Rüben-Saft aus Adana, leicht scharf',en:'Fermented turnip juice from Adana, slightly spicy',tr:'Adana usulü fermente şalgam suyu'},ing:{de:['Rote Bete','Karotten','Salz','Wasser','Essig'],en:['Beetroot','Carrots','Salt','Water','Vinegar'],tr:['Pancar','Havuç','Tuz','Su','Sirke']},prep:'5 Min',cal:'30',spice:{de:'Scharf',en:'Hot',tr:'Acı'},origin:{de:'Şalgam stammt aus Adana.',en:'Şalgam originates from Adana.',tr:'Şalgam, Adana kökenlidir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'dr3',cat:'drinks',img:IMG.tea,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'2,50 €',name:{de:'Çay',en:'Turkish Tea',tr:'Çay'},desc:{de:'Türkischer Schwarztee in kleinen Tulpengläsern',en:'Turkish black tea in small tulip glasses',tr:'Küçük lale bardaklarında Türk çayı'},ing:{de:['Schwarztee','Wasser','Zucker'],en:['Black tea','Water','Sugar'],tr:['Siyah çay','Su','Şeker']},prep:'5 Min',cal:'5',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Çay ist das Herzstück der türkischen Kultur.',en:'Çay is the heart of Turkish culture.',tr:'Çay, Türk kültürünün kalbidir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'dr4',cat:'drinks',img:IMG.coffee,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'3,50 €',name:{de:'Türk Kahvesi',en:'Turkish Coffee',tr:'Türk Kahvesi'},desc:{de:'Traditioneller Mokka im Kupferkännchen',en:'Traditional mocha in copper pot',tr:'Bakır cezvede geleneksel Türk kahvesi'},ing:{de:['Gemahlener Kaffee','Wasser','Zucker'],en:['Ground coffee','Water','Sugar'],tr:['Öğütülmüş kahve','Su','Şeker']},prep:'5 Min',cal:'10',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Türk Kahvesi ist seit 2013 UNESCO-Kulturerbe.',en:'Turkish Coffee has been UNESCO heritage since 2013.',tr:'Türk Kahvesi, 2013\'ten beri UNESCO mirasıdır.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'dr5',cat:'drinks',img:IMG.sahlep,diet:['vegetarian','glutenfree'],badge:'VEG',price:'4,00 €',name:{de:'Sahlep',en:'Salep',tr:'Sahlep'},desc:{de:'Warmes, cremiges Orchideen-Getränk mit Zimt',en:'Warm, creamy orchid drink with cinnamon',tr:'Tarçınlı sıcak salep içeceği'},ing:{de:['Salep-Pulver','Milch','Zucker','Zimt'],en:['Salep powder','Milk','Sugar','Cinnamon'],tr:['Salep tozu','Süt','Şeker','Tarçın']},prep:'10 Min',cal:'180',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Sahlep ist ein warmes Wintergetränk.',en:'Salep is a warm winter drink.',tr:'Sahlep, sıcak bir kış içeceğidir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'dr6',cat:'drinks',img:IMG.lemonade,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'4,00 €',name:{de:'Limonata',en:'Limonata',tr:'Limonata'},desc:{de:'Hausgemachte Limonade mit frischer Minze',en:'Homemade lemonade with fresh mint',tr:'Taze naneli ev yapımı limonata'},ing:{de:['Zitronen','Wasser','Zucker','Minze'],en:['Lemons','Water','Sugar','Mint'],tr:['Limon','Su','Şeker','Nane']},prep:'3 Min',cal:'110',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Limonata ist im Sommer das beliebteste Erfrischungsgetränk.',en:'Limonata is the most popular summer refreshment.',tr:'Limonata, yazın en sevilen serinleticidir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'dr7',cat:'drinks',img:IMG.appletea,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'3,00 €',name:{de:'Elma Çayı',en:'Elma Çayı',tr:'Elma Çayı'},desc:{de:'Türkischer Apfeltee, warm serviert',en:'Turkish apple tea, served warm',tr:'Sıcak servis edilen Türk elma çayı'},ing:{de:['Apfeltee','Wasser','Zucker'],en:['Apple tea','Water','Sugar'],tr:['Elma çayı','Su','Şeker']},prep:'5 Min',cal:'60',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Elma Çayı ist ein süßer, fruchtiger Tee.',en:'Elma çayı is a sweet, fruity tea.',tr:'Elma çayı, tatlı ve meyveli bir çaydır.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'dr8',cat:'drinks',img:IMG.soda,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'2,50 €',name:{de:'Soda',en:'Soda',tr:'Soda'},desc:{de:'Türkisches Mineralwasser mit Kohlensäure',en:'Turkish sparkling mineral water',tr:'Türk maden suyu'},ing:{de:['Mineralwasser','Kohlensäure'],en:['Mineral water','Carbonation'],tr:['Maden suyu','Karbondioksit']},prep:'1 Min',cal:'0',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Soda ist ein beliebtes Erfrischungsgetränk in der Türkei.',en:'Soda is a popular refreshment in Turkey.',tr:'Soda, Türkiye\'de popüler bir serinleticidir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'dr9',cat:'drinks',img:IMG.water,diet:['vegetarian','vegan','glutenfree'],badge:'VEGAN',price:'2,00 €',name:{de:'Su',en:'Water',tr:'Su'},desc:{de:'Stilles Wasser 0,5 l',en:'Still water 0.5 l',tr:'Still su 0,5 l'},ing:{de:['Wasser'],en:['Water'],tr:['Su']},prep:'1 Min',cal:'0',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Stilles Wasser in 0,5-Liter-Flasche.',en:'Still water in a 0.5 litre bottle.',tr:'0,5 litrelik şişede still su.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'m6',cat:'meze',img:IMG.imam,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'8,00 €',name:{de:'İmam Bayıldı',en:'İmam Bayıldı',tr:'İmam Bayıldı'},desc:{de:'Aubergine in Olivenöl geschmort',en:'Aubergine braised in olive oil',tr:'Zeytinyağlı patlıcan'},ing:{de:['Aubergine','Zwiebeln','Tomaten','Knoblauch','Olivenöl'],en:['Aubergine','Onions','Tomatoes','Garlic','Olive oil'],tr:['Patlıcan','Soğan','Domates','Sarımsak','Zeytinyağı']},prep:'40 Min',cal:'210',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Die Aubergine wird traditionell kalt in Olivenöl serviert.',en:'The aubergine is traditionally served cold in olive oil.',tr:'Patlıcan geleneksel olarak zeytinyağıyla soğuk servis edilir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'m7',cat:'meze',img:IMG.sarma,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'7,50 €',name:{de:'Yaprak Sarma',en:'Yaprak Sarma',tr:'Yaprak Sarma'},desc:{de:'Weinblätter mit Reis und Kräutern gefüllt',en:'Vine leaves stuffed with rice and herbs',tr:'Pirinçli asma yaprağı sarması'},ing:{de:['Weinblätter','Reis','Zwiebeln','Minze','Zitrone','Olivenöl'],en:['Vine leaves','Rice','Onions','Mint','Lemon','Olive oil'],tr:['Asma yaprağı','Pirinç','Soğan','Nane','Limon','Zeytinyağı']},prep:'45 Min',cal:'190',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Gefüllte Weinblätter gehören zur ägäischen Küche.',en:'Stuffed vine leaves are part of Aegean cuisine.',tr:'Yaprak sarma Ege mutfağındandır.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'k6',cat:'kebap',img:IMG.sebze,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'13,50 €',name:{de:'Izgara Sebze Tabağı',en:'Izgara Sebze Tabağı',tr:'Izgara Sebze Tabağı'},desc:{de:'Gegrilltes Saisongemüse mit Kräutern',en:'Grilled seasonal vegetables with herbs',tr:'Otlu ızgara mevsim sebzeleri'},ing:{de:['Aubergine','Zucchini','Paprika','Tomaten','Champignons','Olivenöl'],en:['Aubergine','Zucchini','Peppers','Tomatoes','Mushrooms','Olive oil'],tr:['Patlıcan','Kabak','Biber','Domates','Mantar','Zeytinyağı']},prep:'20 Min',cal:'240',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Über Holzkohle gegrilltes Gemüse.',en:'Charcoal-grilled vegetables.',tr:'Közde ızgara sebzeler.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'p6',cat:'pide',img:IMG.sebzepide,diet:['vegetarian','vegan'],badge:'',price:'11,00 €',name:{de:'Sebzeli Pide',en:'Sebzeli Pide',tr:'Sebzeli Pide'},desc:{de:'Pide mit Gemüse, ohne Käse und Fleisch',en:'Pide with vegetables, no cheese or meat',tr:'Peynirsiz, etsiz sebzeli pide'},ing:{de:['Pide-Teig','Paprika','Tomaten','Champignons','Zwiebeln','Olivenöl'],en:['Pide dough','Peppers','Tomatoes','Mushrooms','Onions','Olive oil'],tr:['Pide hamuru','Biber','Domates','Mantar','Soğan','Zeytinyağı']},prep:'15 Min',cal:'420',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Die vegane Variante der Pide.',en:'The vegan pide.',tr:'Vegan pide.'},all:{de:'Enthält Gluten (A)',en:'Contains Gluten (A)',tr:'Gluten (A) içerir'}},
+{id:'d6',cat:'desserts',img:IMG.kabak,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'6,00 €',name:{de:'Kabak Tatlısı',en:'Kabak Tatlısı',tr:'Kabak Tatlısı'},desc:{de:'Kürbis in Zuckersirup mit Walnüssen',en:'Candied pumpkin with walnuts',tr:'Cevizli kabak tatlısı'},ing:{de:['Kürbis','Zucker','Walnüsse','Zimt'],en:['Pumpkin','Sugar','Walnuts','Cinnamon'],tr:['Bal kabağı','Şeker','Ceviz','Tarçın']},prep:'30 Min',cal:'260',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Kürbisdessert aus der anatolischen Küche.',en:'A pumpkin dessert from Anatolian cuisine.',tr:'Anadolu mutfağından kabak tatlısı.'},all:{de:'Enthält Nüsse (H)',en:'Contains Nuts (H)',tr:'Kuruyemiş (H) içerir'}},
+{id:'m8',cat:'meze',img:IMG.cacik,diet:['vegetarian','glutenfree'],badge:'',price:'5,50 €',name:{de:'Cacık',en:'Cacık',tr:'Cacık'},desc:{de:'Erfrischender Joghurt mit Gurke und Minze',en:'Refreshing yogurt with cucumber and mint',tr:'Salatalıklı ve naneli yoğurt'},ing:{de:['Joghurt','Gurke','Knoblauch','Minze','Olivenöl'],en:['Yogurt','Cucumber','Garlic','Mint','Olive oil'],tr:['Yoğurt','Salatalık','Sarımsak','Nane','Zeytinyağı']},prep:'8 Min',cal:'120',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Cacık wird in der Türkei zu Grillgerichten gereicht.',en:'In Turkey, cacık is served with grilled dishes.',tr:'Cacık, Türkiye\'de ızgara yemeklerin yanında servis edilir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'m9',cat:'meze',img:IMG.kisir,diet:['vegetarian','vegan'],badge:'',price:'6,50 €',name:{de:'Kısır',en:'Kısır',tr:'Kısır'},desc:{de:'Würziger Bulgursalat mit Tomatenmark und Petersilie',en:'Spicy bulgur salad with tomato paste and parsley',tr:'Salçalı ve maydanozlu bulgur salatası'},ing:{de:['Bulgur','Tomatenmark','Frühlingszwiebeln','Petersilie','Granatapfelsirup','Olivenöl'],en:['Bulgur','Tomato paste','Spring onions','Parsley','Pomegranate molasses','Olive oil'],tr:['Bulgur','Domates salçası','Taze soğan','Maydanoz','Nar ekşisi','Zeytinyağı']},prep:'15 Min',cal:'230',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Kısır ist ein klassischer Bulgursalat.',en:'Kısır is a classic bulgur salad.',tr:'Kısır, klasik bir bulgur salatasıdır.'},all:{de:'Enthält Gluten (A)',en:'Contains Gluten (A)',tr:'Gluten (A) içerir'}},
+{id:'s1',cat:'soup',img:IMG.lentil,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'4,90 €',name:{de:'Mercimek Çorbası',en:'Mercimek Çorbası',tr:'Mercimek Çorbası'},desc:{de:'Cremige Suppe aus roten Linsen mit Zitrone',en:'Creamy red lentil soup with lemon',tr:'Limonlu kırmızı mercimek çorbası'},ing:{de:['Rote Linsen','Zwiebeln','Karotten','Kartoffeln','Olivenöl','Zitrone'],en:['Red lentils','Onions','Carrots','Potatoes','Olive oil','Lemon'],tr:['Kırmızı mercimek','Soğan','Havuç','Patates','Zeytinyağı','Limon']},prep:'25 Min',cal:'190',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Mercimek Çorbası ist die beliebteste Suppe der Türkei.',en:'Mercimek çorbası is Turkey\'s most popular soup.',tr:'Mercimek çorbası, Türkiye\'nin en sevilen çorbasıdır.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'s2',cat:'soup',img:IMG.cobans,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'6,50 €',name:{de:'Çoban Salatası',en:'Çoban Salatası',tr:'Çoban Salatası'},desc:{de:'Hirtensalat mit Tomaten, Gurken, Zwiebeln und Petersilie',en:'Shepherd\'s salad with tomatoes, cucumbers, onions and parsley',tr:'Domates, salatalık, soğan ve maydanozlu çoban salatası'},ing:{de:['Tomaten','Gurken','Zwiebeln','Paprika','Petersilie','Olivenöl','Zitrone'],en:['Tomatoes','Cucumbers','Onions','Peppers','Parsley','Olive oil','Lemon'],tr:['Domates','Salatalık','Soğan','Biber','Maydanoz','Zeytinyağı','Limon']},prep:'10 Min',cal:'110',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Der Hirtensalat ist der Klassiker auf türkischen Tischen.',en:'The shepherd\'s salad is a classic on Turkish tables.',tr:'Çoban salatası, Türk sofralarının klasiğidir.'},all:{de:'Keine',en:'None',tr:'Yok'}},
+{id:'s3',cat:'soup',img:IMG.salad,diet:['glutenfree'],badge:'',price:'11,50 €',name:{de:'Tavuklu Salata',en:'Tavuklu Salata',tr:'Tavuklu Salata'},desc:{de:'Gegrilltes Hähnchenbrustfilet auf Blattsalat',en:'Grilled chicken breast on green salad',tr:'Yeşil salata üzerinde ızgara tavuk göğsü'},ing:{de:['Hähnchenbrust','Blattsalat','Tomaten','Gurken','Mais','Joghurtdressing'],en:['Chicken breast','Green salad','Tomatoes','Cucumbers','Corn','Yogurt dressing'],tr:['Tavuk göğsü','Yeşil salata','Domates','Salatalık','Mısır','Yoğurt sosu']},prep:'15 Min',cal:'380',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Ein leichter Hauptgang mit gegrilltem Hähnchen.',en:'A light main course with grilled chicken.',tr:'Izgara tavuklu hafif bir ana yemek.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'k7',cat:'kebap',img:IMG.grill,diet:['glutenfree'],badge:'',price:'15,90 €',name:{de:'Tavuk Şiş',en:'Tavuk Şiş',tr:'Tavuk Şiş'},desc:{de:'Marinierte Hähnchenspieße vom Holzkohlegrill',en:'Marinated chicken skewers from the charcoal grill',tr:'Közde ızgara marine tavuk şiş'},ing:{de:['Hähnchenbrust','Joghurt-Marinade','Paprikapaste','Knoblauch','Gegrillte Tomaten'],en:['Chicken breast','Yogurt marinade','Pepper paste','Garlic','Grilled tomatoes'],tr:['Tavuk göğsü','Yoğurt marinesi','Biber salçası','Sarımsak','Izgara domates']},prep:'25 Min',cal:'520',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Tavuk Şiş ist die mildere Variante des Şiş Kebap.',en:'Tavuk şiş is the milder variant of şiş kebab.',tr:'Tavuk şiş, şiş kebabın daha hafif versiyonudur.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'k8',cat:'kebap',img:IMG.adana,diet:[],badge:'',price:'22,90 €',name:{de:'Karışık Izgara',en:'Karışık Izgara',tr:'Karışık Izgara'},desc:{de:'Gemischter Grillteller mit Lammkotelett und Adana',en:'Mixed grill plate with lamb chop and Adana',tr:'Kuzu pirzola ve Adanalı karışık ızgara'},ing:{de:['Lammkotelett','Adana-Hack','Hähnchen-Şiş','Bulgur','Gegrillte Tomaten und Paprika'],en:['Lamb chop','Adana mince','Chicken skewer','Bulgur','Grilled tomatoes and peppers'],tr:['Kuzu pirzola','Adana kıyma','Tavuk şiş','Bulgur','Izgara domates ve biber']},prep:'30 Min',cal:'980',spice:{de:'Mittel',en:'Medium',tr:'Orta'},origin:{de:'Der Grillteller vereint die Klassiker der Holzkohleküche.',en:'The grill plate combines the classics of charcoal cooking.',tr:'Karışık ızgara, mangal mutfağının klasiklerini bir araya getirir.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'k9',cat:'kebap',img:IMG.hellim,diet:['vegetarian','glutenfree'],badge:'',price:'9,90 €',name:{de:'Izgara Hellim',en:'Izgara Hellim',tr:'Izgara Hellim'},desc:{de:'Gegrillter Hellim-Käse mit Tomaten und Rucola',en:'Grilled halloumi with tomatoes and rocket',tr:'Domates ve rokalı ızgara hellim'},ing:{de:['Hellim-Käse','Tomaten','Rucola','Olivenöl','Oregano'],en:['Halloumi','Tomatoes','Rocket','Olive oil','Oregano'],tr:['Hellim peyniri','Domates','Roka','Zeytinyağı','Kekik']},prep:'10 Min',cal:'340',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Hellim stammt aus der zypriotischen Küche.',en:'Halloumi comes from Cypriot cuisine.',tr:'Hellim Kıbrıs mutfağından gelir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'p7',cat:'pide',img:IMG.pide,diet:[],badge:'',price:'13,90 €',name:{de:'Karışık Pide',en:'Karışık Pide',tr:'Karışık Pide'},desc:{de:'Pide mit Hackfleisch, Sucuk und Kaşar-Käse',en:'Pide with minced meat, sucuk and kaşar',tr:'Kıyma, sucuk ve kaşarlı pide'},ing:{de:['Pide-Teig','Rinderhack','Sucuk','Kaşar-Käse','Paprika'],en:['Pide dough','Minced beef','Sucuk','Kaşar cheese','Peppers'],tr:['Pide hamuru','Dana kıyma','Sucuk','Kaşar peyniri','Biber']},prep:'20 Min',cal:'780',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Die gemischte Pide ist ideal für mehrere Klassiker.',en:'The mixed pide is ideal for several classics.',tr:'Karışık pide, birden fazla klasik için idealdir.'},all:{de:'Enthält Gluten (A), Milch (G)',en:'Contains Gluten (A), Milk (G)',tr:'Gluten (A), Süt (G) içerir'}},
+{id:'d7',cat:'desserts',img:IMG.kazan,diet:['vegetarian','glutenfree'],badge:'',price:'6,00 €',name:{de:'Kazandibi',en:'Kazandibi',tr:'Kazandibi'},desc:{de:'Karamellisierter Milchpudding',en:'Caramelised milk pudding',tr:'Karamelize sütlü tatlı'},ing:{de:['Milch','Sahne','Zucker','Reisstärke'],en:['Milk','Cream','Sugar','Rice starch'],tr:['Süt','Krema','Şeker','Pirinç nişastası']},prep:'40 Min',cal:'290',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Kazandibi bedeutet „Boden des Kessels“.',en:'Kazandibi means "bottom of the pot".',tr:'Kazandibi "kazanın dibi" demektir.'},all:{de:'Enthält Milch (G)',en:'Contains Milk (G)',tr:'Süt (G) içerir'}},
+{id:'dr10',cat:'drinks',img:IMG.tea,diet:['vegetarian','vegan','glutenfree'],badge:'',price:'3,00 €',name:{de:'Nane Limon',en:'Nane Limon',tr:'Nane Limon'},desc:{de:'Frischer Minz-Zitronen-Tee, warm oder kalt',en:'Fresh mint-lemon tea, warm or cold',tr:'Taze nane-limon çayı'},ing:{de:['Minze','Zitrone','Wasser','Zucker'],en:['Mint','Lemon','Water','Sugar'],tr:['Nane','Limon','Su','Şeker']},prep:'5 Min',cal:'40',spice:{de:'Mild',en:'Mild',tr:'Hafif'},origin:{de:'Nane Limon ist ein erfrischender Minz-Zitronen-Tee.',en:'Nane Limon is a refreshing mint-lemon tea.',tr:'Nane Limon, ferahlatıcı nane-limon çayıdır.'},all:{de:'Keine',en:'None',tr:'Yok'}}
+];
+(function(){for(var i=DISHES.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=DISHES[i];DISHES[i]=DISHES[j];DISHES[j]=t;}})();
+for (var q = 0; q < DISHES.length; q++){ var m = DISHES[q].all.de.match(/\(([A-Z])\)/g) || []; DISHES[q].al = m.map(function(x){return x.charAt(1);}); }
+
+var TR = {
+  de:{hero_sub:"Türkische Küche · Bremen",hero_wel:"Willkommen",cat_soup:"Suppen & Salate",details:"Zutaten & Allergene",chef:"Empfehlung",today:"Heute",share:"Teilen",copied:"Link kopiert",table:"Tisch-Nr. (optional)",wa_send:"Per WhatsApp senden",list_note_wa:"Sende deine Auswahl an das Restaurant.",info_title:"Restaurant & Info",i_addr:"Adresse",i_phone:"Telefon",i_hours:"Öffnungszeiten",i_pay:"Zahlung",i_wifi:"WLAN",i_delivery:"Lieferservice",i_note:"Hinweis",route:"Route öffnen",imprint:"Impressum",privacy:"Datenschutz",add_legend:"Zusatzstoffe",order:"Bestellung",add_list:"Zur Merkliste",on_list:"Auf der Merkliste",list_title:"Meine Merkliste",list_note:"Zeige diese Auswahl dem Service. Dies ist keine Bestellung.",list_bar:"Merkliste",total:"Summe",clear:"Liste leeren",pairs:"Dazu passt",al_none:"Keine deklarierten Allergene",list_empty:"Noch nichts ausgewählt.",t_origin:"Geschichte & Herkunft",rate_btn:"Bewerten",rate_title:"Bewerte uns",rate_sub:"Wie war dein Besuch?",rate_ph:"Kommentar (optional)",rate_send:"Senden",rate_thanks:"Danke für deine Bewertung!",rate_yours:"Deine Bewertung",rate_card:"Wie hat es geschmeckt?",rate_google:"⭐ Auf Google bewerten",rate_local:"Deine Bewertung wird nur auf diesem Gerät gespeichert.",cash_note:"📢 Bitte gib deine Bestellung an der Kasse auf! Zeige diese Liste dem Personal.",legend:"Allergene",legend_note:"Allergene und Zusatzstoffe stehen bei jedem Gericht unter „Details“. Bitte sprich uns bei Allergien an. Alle Preise in € inkl. MwSt.",without:"Ohne:",sort_mix:"Mix",sort_asc:"Preis ↑",sort_desc:"Preis ↓",kcal:"kcal",AL_A:"Gluten",AL_C:"Ei",AL_G:"Milch",AL_H:"Nüsse",AL_N:"Sesam",pick:"Bitte Sterne wählen",cat_all:"Alle",cat_meze:"Meze",cat_kebap:"Kebap & Grill",cat_pide:"Pide",cat_desserts:"Desserts",cat_drinks:"Getränke",diet_veg:"Vegetarisch",diet_vegan:"Vegan",diet_gf:"Glutenfrei",search_ph:"Gericht suchen...",found:"Gerichte gefunden",none_title:"Keine Ergebnisse gefunden",none_text:"Versuchen Sie einen anderen Suchbegriff oder entfernen Sie Filter.",reset:"Filter zurücksetzen",prep:"Zubereitung",cal:"Kalorien",spice:"Schärfe",ing:"Zutaten",origin:"Geschichte & Herkunft",allergens:"Allergene"},
+  en:{hero_sub:"Turkish Cuisine · Bremen",hero_wel:"Welcome",cat_soup:"Soups & Salads",details:"Ingredients & allergens",chef:"Recommended",today:"Today",share:"Share",copied:"Link copied",table:"Table no. (optional)",wa_send:"Send via WhatsApp",list_note_wa:"Send your selection to the restaurant.",info_title:"Restaurant & Info",i_addr:"Address",i_phone:"Phone",i_hours:"Opening hours",i_pay:"Payment",i_wifi:"Wi-Fi",i_delivery:"Delivery",i_note:"Note",route:"Open route",imprint:"Legal notice",privacy:"Privacy",add_legend:"Additives",order:"Order",add_list:"Add to list",on_list:"On your list",list_title:"My list",list_note:"Show this selection to the staff. This is not an order.",list_bar:"My list",total:"Total",clear:"Clear list",pairs:"Goes well with",al_none:"No declared allergens",list_empty:"Nothing selected yet.",t_origin:"History & Origin",rate_btn:"Rate",rate_title:"Rate us",rate_sub:"How was your visit?",rate_ph:"Comment (optional)",rate_send:"Submit",rate_thanks:"Thanks for your rating!",rate_yours:"Your rating",rate_card:"How did it taste?",rate_google:"⭐ Rate on Google",rate_local:"Your rating is saved on this device only.",cash_note:"📢 Please place your order at the cash counter! Show this list to the staff.",legend:"Allergens",legend_note:"Allergens and additives are listed on each dish under “Details”. Please ask us about allergies. All prices in € incl. VAT.",without:"Without:",sort_mix:"Mix",sort_asc:"Price ↑",sort_desc:"Price ↓",kcal:"kcal",AL_A:"Gluten",AL_C:"Egg",AL_G:"Milk",AL_H:"Tree nuts",AL_N:"Sesame",pick:"Please select stars",cat_all:"All",cat_meze:"Meze",cat_kebap:"Kebab & Grill",cat_pide:"Pide",cat_desserts:"Desserts",cat_drinks:"Drinks",diet_veg:"Vegetarian",diet_vegan:"Vegan",diet_gf:"Gluten-Free",search_ph:"Search dishes...",found:"dishes found",none_title:"No results found",none_text:"Try a different search term or remove filters.",reset:"Reset filters",prep:"Prep Time",cal:"Calories",spice:"Spice Level",ing:"Ingredients",origin:"History & Origin",allergens:"Allergens"},
+  tr:{hero_sub:"Türk Mutfağı · Bremen",hero_wel:"Hoş geldiniz",cat_soup:"Çorba & Salata",details:"Malzemeler & alerjenler",chef:"Öneri",today:"Bugün",share:"Paylaş",copied:"Bağlantı kopyalandı",table:"Masa no. (isteğe bağlı)",wa_send:"WhatsApp ile gönder",list_note_wa:"Seçiminizi restorana gönderin.",info_title:"Restoran & Bilgi",i_addr:"Adres",i_phone:"Telefon",i_hours:"Çalışma saatleri",i_pay:"Ödeme",i_wifi:"Wi-Fi",i_delivery:"Paket servis",i_note:"Not",route:"Yol tarifi",imprint:"Künye",privacy:"Gizlilik",add_legend:"Katkı maddeleri",order:"Sipariş",add_list:"Listeye ekle",on_list:"Listenizde",list_title:"Listem",list_note:"Bu seçimi servise gösterin. Bu bir sipariş değildir.",list_bar:"Listem",total:"Toplam",clear:"Listeyi temizle",pairs:"Yanında iyi gider",al_none:"Beyan edilen alerjen yok",list_empty:"Henüz seçim yok.",t_origin:"Tarihçe & Köken",rate_btn:"Puanla",rate_title:"Bizi puanlayın",rate_sub:"Ziyaretiniz nasıldı?",rate_ph:"Yorum (isteğe bağlı)",rate_send:"Gönder",rate_thanks:"Puanınız için teşekkürler!",rate_yours:"Puanınız",rate_card:"Lezzet nasıldı?",rate_google:"⭐ Google'da puanla",rate_local:"Puanınız yalnızca bu cihazda saklanır.",cash_note:"📢 Lütfen siparişinizi kasada verin! Bu listeyi personele gösterin.",legend:"Alerjenler",legend_note:"Alerjenler ve katkı maddeleri her yemeğin „Detaylar“ bölümünde yer alır. Lütfen alerji durumunda bize danışın. Tüm fiyatlar KDV dahil € cinsindendir.",without:"Hariç:",sort_mix:"Karışık",sort_asc:"Fiyat ↑",sort_desc:"Fiyat ↓",kcal:"kcal",AL_A:"Gluten",AL_C:"Yumurta",AL_G:"Süt",AL_H:"Kuruyemiş",AL_N:"Susam",pick:"Lütfen yıldız seçin",cat_all:"Tümü",cat_meze:"Mezeler",cat_kebap:"Kebap & Izgara",cat_pide:"Pideler",cat_desserts:"Tatlılar",cat_drinks:"İçecekler",diet_veg:"Vejetaryen",diet_vegan:"Vegan",diet_gf:"Glutensiz",search_ph:"Yemek ara...",found:"yemek bulundu",none_title:"Sonuç bulunamadı",none_text:"Farklı bir arama terimi deneyin veya filtreleri kaldırın.",reset:"Filtreleri sıfırla",prep:"Hazırlık",cal:"Kalori",spice:"Acılık",ing:"Malzemeler",origin:"Tarihçe & Köken",allergens:"Alerjenler"}
+};
+
+var currentLang = 'de';
+var currentCat = 'all';
+var activeDiets = [];
+var activeAl = [];
+var sortMode = 'mix';
+var currentItemId = null;
+var modal = document.getElementById('itemModal');
+
+function render(){
+  var t = TR[currentLang];
+  document.getElementById('searchInput').placeholder = t.search_ph;
+  document.getElementById('emptyState').querySelector('h3').textContent = t.none_title;
+  document.getElementById('emptyState').querySelector('p').textContent = t.none_text;
+  document.getElementById('resetBtn').textContent = t.reset;
+  document.querySelector('#categoryTabs [data-cat="all"]').textContent = t.cat_all;
+  document.querySelector('#categoryTabs [data-cat="meze"]').textContent = t.cat_meze;
+  document.querySelector('#categoryTabs [data-cat="soup"]').textContent = t.cat_soup;
+  document.querySelector('#categoryTabs [data-cat="kebap"]').textContent = t.cat_kebap;
+  document.querySelector('#categoryTabs [data-cat="pide"]').textContent = t.cat_pide;
+  document.querySelector('#categoryTabs [data-cat="desserts"]').textContent = t.cat_desserts;
+  document.querySelector('#categoryTabs [data-cat="drinks"]').textContent = t.cat_drinks;
+  document.querySelector('#dietaryTabs [data-diet="vegetarian"]').textContent = t.diet_veg;
+  document.querySelector('#dietaryTabs [data-diet="vegan"]').textContent = t.diet_vegan;
+  document.querySelector('#dietaryTabs [data-diet="glutenfree"]').textContent = t.diet_gf;
+  document.getElementById('rateHeaderTxt').textContent = t.rate_btn;
+  var so = document.getElementById('sortSelect').options;
+  so[0].text = t.sort_mix; so[1].text = t.sort_asc; so[2].text = t.sort_desc;
+  document.getElementById('legendNote').textContent = t.legend_note;
+  document.documentElement.lang = currentLang;
+  document.getElementById('heroSub').textContent = t.hero_sub;
+  document.getElementById('heroWel').textContent = t.hero_wel;
+  document.querySelector('#dietaryTabs [data-diet="chef"]').textContent = '★ ' + t.chef;
+  document.getElementById('rateGoogleCard').textContent = t.rate_google;
+  renderInfo(t);
+  renderRateCard();
+  refreshListBar();
+  var html = '';
+  var list = DISHES.slice();
+  if (sortMode !== 'mix') list.sort(function(x, y){ var px = parseFloat(x.price.replace(',', '.')), py = parseFloat(y.price.replace(',', '.')); return sortMode === 'asc' ? px - py : py - px; });
+  if (TODAY_ID){ for (var z = 0; z < list.length; z++){ if (list[z].id === TODAY_ID){ list.unshift(list.splice(z, 1)[0]); break; } } }
+  for (var i = 0; i < list.length; i++){
+    var d = list[i];
+    var badgeHtml = '';
+    if (d.diet.indexOf('vegan') !== -1) badgeHtml += '<span class="card-badge badge-vegan">VEGAN</span>';
+    else if (d.diet.indexOf('vegetarian') !== -1) badgeHtml += '<span class="card-badge badge-veg">VEG</span>';
+    if (d.diet.indexOf('glutenfree') !== -1) badgeHtml += '<span class="card-badge badge-gf">GF</span>';
+    if (!badgeHtml && d.badge) badgeHtml = '<span class="card-badge">' + d.badge + '</span>';
+    if (badgeHtml) badgeHtml = '<div class="badge-stack">' + badgeHtml + '</div>';
+    html += '<div class="menu-card' + (d.id === TODAY_ID ? ' today' : '') + '" data-id="' + d.id + '" data-cat="' + d.cat + '" data-diet="' + d.diet.join(' ') + (CHEF.indexOf(d.id) !== -1 ? ' chef' : '') + '" data-al="' + d.al.join(' ') + '">';
+    html += '<div class="card-image"><img src="' + d.img + '" alt="' + d.name[currentLang] + '" loading="lazy" onerror="imgErr(this)">' + badgeHtml + '</div>';
+    html += '<div class="card-content">';
+    html += '<div class="card-header"><div class="card-title">' + d.name[currentLang] + '</div><span class="card-price">' + d.price + '</span></div>';
+    html += '<p class="card-desc">' + d.desc[currentLang] + '</p>';
+    var flags = (d.id === TODAY_ID ? '<b class="chef">● ' + t.today + '</b> · ' : '') + (CHEF.indexOf(d.id) !== -1 ? '<b class="chef">★ ' + t.chef + '</b> · ' : '');
+    var hot = d.spice.de === 'Scharf' ? ' 🌶🌶🌶' : d.spice.de === 'Mittel' ? ' 🌶🌶' : '';
+    html += '<div class="card-meta">' + flags + d.cal + ' ' + t.kcal + ' · ' + d.prep + ' · ' + d.spice[currentLang] + hot + '</div>';
+    html += '<div class="card-footer"><span class="allergens">' + t.details + '</span>';
+    html += '<svg class="info-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>';
+    html += '</div></div></div>';
+  }
+  document.getElementById('menuGrid').innerHTML = html;
+  applyFilters();
+}
+
+function applyFilters(){
+  var q = (document.getElementById('searchInput').value || '').toLowerCase();
+  var cards = document.querySelectorAll('.menu-card');
+  var visible = 0;
+  for (var i = 0; i < cards.length; i++){
+    var card = cards[i];
+    var cat = card.getAttribute('data-cat');
+    var dietStr = card.getAttribute('data-diet') || '';
+    var title = card.querySelector('.card-title').textContent.toLowerCase();
+    var desc = card.querySelector('.card-desc').textContent.toLowerCase();
+    var matchQ = q === '' || title.indexOf(q) !== -1 || desc.indexOf(q) !== -1;
+    var matchC = currentCat === 'all' || cat === currentCat;
+    var matchD = true;
+    if (activeDiets.length > 0){
+      for (var j = 0; j < activeDiets.length; j++){
+        if (dietStr.split(' ').indexOf(activeDiets[j]) === -1){ matchD = false; break; }
+      }
+    }
+    var cardAl = (card.getAttribute('data-al') || '').split(' ');
+    for (var k = 0; k < activeAl.length; k++){ if (cardAl.indexOf(activeAl[k]) !== -1){ matchD = false; break; } }
+    if (matchQ && matchC && matchD){ card.style.display = 'flex'; visible++; }
+    else { card.style.display = 'none'; }
+  }
+  document.getElementById('emptyState').style.display = visible === 0 ? 'block' : 'none';
+  document.getElementById('resultCount').textContent = visible + ' ' + TR[currentLang].found;
+}
+
+var catTabs = document.querySelectorAll('#categoryTabs .tab-btn');
+for (var i = 0; i < catTabs.length; i++){
+  catTabs[i].addEventListener('click', function(){
+    for (var j = 0; j < catTabs.length; j++) catTabs[j].classList.remove('active');
+    this.classList.add('active');
+    currentCat = this.getAttribute('data-cat');
+    applyFilters();
+  });
+}
+
+var dietTabs = document.querySelectorAll('#dietaryTabs .tab-btn');
+for (var i = 0; i < dietTabs.length; i++){
+  dietTabs[i].addEventListener('click', function(){
+    this.classList.toggle('active');
+    var diet = this.getAttribute('data-diet');
+    if (this.classList.contains('active')){
+      if (activeDiets.indexOf(diet) === -1) activeDiets.push(diet);
+    } else {
+      var idx = activeDiets.indexOf(diet);
+      if (idx !== -1) activeDiets.splice(idx, 1);
+    }
+    applyFilters();
+  });
+}
+
+document.getElementById('sortSelect').addEventListener('change', function(){ sortMode = this.value; render(); });
+document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+document.getElementById('resetBtn').addEventListener('click', function(){
+  currentCat = 'all';
+  activeDiets = [];
+  activeAl = [];
+  document.getElementById('searchInput').value = '';
+  for (var j = 0; j < catTabs.length; j++) catTabs[j].classList.remove('active');
+  catTabs[0].classList.add('active');
+  for (var j = 0; j < dietTabs.length; j++) dietTabs[j].classList.remove('active');
+  applyFilters();
+});
+
+document.getElementById('menuGrid').addEventListener('click', function(e){
+  var card = e.target.closest('.menu-card');
+  if (!card) return;
+  openModal(card.getAttribute('data-id'));
+});
+
+document.getElementById('themeBtn').addEventListener('click', function(){
+  document.body.classList.toggle('dark');
+  var isDark = document.body.classList.contains('dark');
+  var icon = document.getElementById('themeIcon');
+  if (isDark){
+    icon.innerHTML = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>';
+  } else {
+    icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+  }
+});
+
+var langBtns = document.querySelectorAll('.lang-btn');
+for (var i = 0; i < langBtns.length; i++){
+  langBtns[i].addEventListener('click', function(){
+    for (var j = 0; j < langBtns.length; j++) langBtns[j].classList.remove('active');
+    this.classList.add('active');
+    currentLang = this.getAttribute('data-lang');
+    render();
+    if (modal.open && currentItemId) openModal(currentItemId);
+  });
+}
+
+function openModal(id){
+  var d = null;
+  for (var i = 0; i < DISHES.length; i++){ if (DISHES[i].id === id){ d = DISHES[i]; break; } }
+  if (!d) return;
+  currentItemId = id;
+  var t = TR[currentLang];
+  document.getElementById('modalImage').src = d.img;
+  document.getElementById('modalTitle').textContent = d.name[currentLang];
+  document.getElementById('modalPrice').textContent = d.price;
+  document.getElementById('modalDesc').textContent = d.desc[currentLang];
+  document.getElementById('modalPrep').textContent = d.prep;
+  document.getElementById('modalCal').textContent = d.cal;
+  document.getElementById('modalSpice').textContent = d.spice[currentLang];
+  document.getElementById('modalOrigin').textContent = d.origin[currentLang];
+  var ah = ''; for (var c = 0; c < d.al.length; c++) ah += '<span class="al-full"><b>' + d.al[c] + '</b>' + t['AL_' + d.al[c]] + '</span>';
+  var ael = document.getElementById('modalAllergens');
+  ael.classList.toggle('none', !d.al.length);
+  ael.innerHTML = d.al.length ? ah : '✓ ' + t.al_none;
+  document.getElementById('tAl').textContent = t.allergens;
+  document.getElementById('tIng').textContent = t.ing;
+  document.getElementById('tPair').textContent = t.pairs;
+  document.getElementById('tOrigin').textContent = t.origin;
+  var labels = document.querySelectorAll('.info-item .label');
+  labels[0].textContent = t.prep;
+  labels[1].textContent = t.cal;
+  labels[2].textContent = t.spice;
+  var ul = document.getElementById('modalIngredients');
+  ul.innerHTML = '';
+  for (var i = 0; i < d.ing[currentLang].length; i++){
+    var li = document.createElement('li');
+    li.textContent = d.ing[currentLang][i];
+    ul.appendChild(li);
+  }
+  var dh = '';
+  if (d.diet.indexOf('vegan') !== -1) dh += '<span class="card-badge badge-vegan">' + t.diet_vegan + '</span>';
+  else if (d.diet.indexOf('vegetarian') !== -1) dh += '<span class="card-badge badge-veg">' + t.diet_veg + '</span>';
+  if (d.diet.indexOf('glutenfree') !== -1) dh += '<span class="card-badge badge-gf">' + t.diet_gf + '</span>';
+  document.getElementById('modalDiet').innerHTML = dh;
+  var pr = PAIR[id] || [], ph = '';
+  for (var k = 0; k < pr.length; k++){ var pd = byId(pr[k]); if (pd) ph += '<div class="pair-row" data-id="' + pd.id + '"><span>' + pd.name[currentLang] + '</span><span>' + pd.price + '</span></div>'; }
+  document.getElementById('modalPair').innerHTML = ph;
+  document.getElementById('pairSec').style.display = ph ? 'block' : 'none';
+  refreshAddBtn();
+  if (!modal.open) modal.showModal();
+  document.querySelector('#itemModal .modal-content').scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+}
+
+document.getElementById('modalClose').addEventListener('click', function(){
+  modal.close();
+  document.body.style.overflow = '';
+});
+
+modal.addEventListener('click', function(e){
+  var r = modal.getBoundingClientRect();
+  if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom){
+    modal.close();
+    document.body.style.overflow = '';
+  }
+});
+
+function renderRateCard(){
+  var t = TR[currentLang];
+  document.getElementById('rateCardTitle').textContent = t.rate_card;
+  document.getElementById('rateCardSub').textContent = t.rate_local;
+}
+
+var PAIR = {k1:['m4','dr1'],k2:['dr1','m1'],k3:['dr1','dr3'],k4:['m2','dr2'],k5:['m6','dr2'],k6:['m2','dr3'],p1:['dr1','dr3'],p2:['m4','dr2'],p3:['dr1','dr3'],p4:['dr1','m1'],p5:['dr2','m4'],p6:['m2','dr3'],m1:['k4','p1'],m2:['k6','p6'],m3:['dr2','m4'],m4:['k1','p5'],m5:['dr3','m1'],m6:['k5','dr3'],m7:['m2','dr3'],d1:['dr4','dr3'],d2:['dr3','dr4'],d3:['dr4','dr3'],d4:['dr3','dr4'],d5:['dr3','dr4'],d6:['dr3','dr4'],dr1:['k2','p1'],dr2:['k5','p5'],dr3:['d1','d2'],dr4:['d1','d5'],dr5:['d3','d1'],dr8:['k1','d1'],dr9:['k2','p2'],dr10:['d1','d3']};
+function byId(id){ for (var i = 0; i < DISHES.length; i++){ if (DISHES[i].id === id) return DISHES[i]; } return null; }
+function priceNum(d){ return parseFloat(d.price.replace(',', '.')); }
+function fmt(n){ return n.toFixed(2).replace('.', ',') + ' €'; }
+document.getElementById('modalPair').addEventListener('click', function(e){ var r = e.target.closest('.pair-row'); if (r) openModal(r.getAttribute('data-id')); });
+
+var LIST = {};
+try { LIST = JSON.parse(localStorage.getItem('sultan_list') || '{}') || {}; } catch(e){ LIST = {}; }
+function saveList(){ try { localStorage.setItem('sultan_list', JSON.stringify(LIST)); } catch(e){} }
+function listStats(){ var n = 0, sum = 0; for (var id in LIST){ var d = byId(id); if (d && LIST[id] > 0){ n += LIST[id]; sum += LIST[id] * priceNum(d); } } return {n:n, sum:sum}; }
+function refreshAddBtn(){
+  if (!currentItemId) return;
+  var t = TR[currentLang], d = byId(currentItemId), q = LIST[currentItemId] || 0;
+  document.getElementById('shareBtn').textContent = '↗ ' + t.share;
+  document.getElementById('addBtn').textContent = (q ? '✓ ' + t.on_list + ' (' + q + ') · ' : '＋ ' + t.add_list + ' · ') + d.price;
+}
+function refreshListBar(){
+  var t = TR[currentLang], st = listStats(), bar = document.getElementById('listBar');
+  bar.style.display = st.n ? 'flex' : 'none';
+  document.body.classList.toggle('has-list', st.n > 0);
+  document.getElementById('listBarTxt').textContent = t.list_bar + ' · ' + st.n;
+  document.getElementById('listBarTotal').textContent = fmt(st.sum);
+}
+function renderList(){
+  var t = TR[currentLang], h = '', st = listStats();
+  document.getElementById('listTitle').textContent = t.list_title;
+  document.getElementById('listNote').textContent = t.list_note;
+  document.getElementById('tableLbl').textContent = t.table;
+  document.getElementById('tableNo').value = TABLE;
+  var wa = document.getElementById('waBtn'); wa.textContent = t.wa_send; wa.style.display = RESTAURANT.whatsapp ? 'block' : 'none';
+  document.getElementById('listClear').textContent = t.clear;
+  var cn = document.getElementById('cashNote');
+  cn.textContent = t.cash_note;
+  cn.classList.toggle('show', st.n > 0);
+  for (var id in LIST){ var d = byId(id); if (!d || LIST[id] < 1) continue;
+    h += '<div class="li-row"><span class="nm">' + d.name[currentLang] + '</span><span class="qty"><button data-act="-" data-id="' + id + '">−</button><b>' + LIST[id] + '</b><button data-act="+" data-id="' + id + '">+</button></span><span style="min-width:64px;text-align:right;">' + fmt(LIST[id] * priceNum(d)) + '</span></div>'; }
+  if (!st.n) h = '<p class="sub" style="padding:16px 0;">' + t.list_empty + '</p>';
+  else h += '<div class="li-total"><span>' + t.total + '</span><span>' + fmt(st.sum) + '</span></div>';
+  document.getElementById('listBody').innerHTML = h;
+}
+document.getElementById('addBtn').addEventListener('click', function(){ LIST[currentItemId] = (LIST[currentItemId] || 0) + 1; saveList(); refreshAddBtn(); refreshListBar(); });
+document.getElementById('listBar').addEventListener('click', function(){ renderList(); document.getElementById('listModal').showModal(); });
+document.getElementById('listBody').addEventListener('click', function(e){
+  var b = e.target.closest('button'); if (!b) return;
+  var id = b.getAttribute('data-id'); LIST[id] = Math.max(0, (LIST[id] || 0) + (b.getAttribute('data-act') === '+' ? 1 : -1));
+  if (!LIST[id]) delete LIST[id];
+  saveList(); renderList(); refreshListBar(); refreshAddBtn();
+  if (!listStats().n) document.getElementById('listModal').close();
+});
+document.getElementById('listClear').addEventListener('click', function(){ LIST = {}; saveList(); refreshListBar(); refreshAddBtn(); document.getElementById('listModal').close(); });
+document.getElementById('listClose').addEventListener('click', function(){ document.getElementById('listModal').close(); });
+
+function renderInfo(t){
+  var R = RESTAURANT, L = currentLang, rows = '';
+  function row(k, v){ if (v) rows += '<div class="info-row"><b>' + k + '</b><span>' + v + '</span></div>'; }
+  var maps = R.maps || (R.address ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(R.address) : '');
+  row(t.i_addr, R.address ? esc(R.address) + (maps ? '<br><a href="' + safeUrl(maps) + '" target="_blank" rel="noopener">' + t.route + '</a>' : '') : '');
+  row(t.i_phone, R.phone ? '<a href="tel:' + esc(R.phone.replace(/[^+0-9]/g, '')) + '">' + esc(R.phone) + '</a>' : '');
+  row(t.i_hours, R.hours && R.hours[L] ? esc(R.hours[L]).replace(/\n/g, '<br>') : '');
+  row(t.i_pay, R.payment && R.payment[L] ? esc(R.payment[L]) : '');
+  row(t.i_wifi, R.wifi ? esc(R.wifi) : '');
+  row(t.i_delivery, R.delivery ? '<a href="' + safeUrl(R.delivery) + '" target="_blank" rel="noopener">' + esc(R.delivery.replace(/^https?:\/\/(www\.)?/i, '')) + '</a>' : '');
+  row(t.i_note, R.note && R.note[L] ? esc(R.note[L]) : '');
+  document.getElementById('infoTitle').textContent = R.name || t.info_title;
+  document.getElementById('infoBody').innerHTML = rows;
+  document.getElementById('infoCard').style.display = rows ? 'block' : 'none';
+}
+document.getElementById('shareBtn').addEventListener('click', function(){
+  var d = byId(currentItemId), t = TR[currentLang], txt = d.name[currentLang] + ' – ' + d.price;
+  if (navigator.share){ navigator.share({title: RESTAURANT.name || 'Kültür Kebaphaus', text: txt, url: location.href}).catch(function(){}); }
+  else { try { navigator.clipboard.writeText(txt + ' ' + location.href); this.textContent = '✓ ' + t.copied; } catch(e){} }
+});
+var TABLE = '';
+try { TABLE = new URLSearchParams(location.search).get('tisch') || new URLSearchParams(location.search).get('table') || localStorage.getItem('sultan_table') || ''; } catch(e){}
+TABLE = TABLE.replace(/[^0-9A-Za-z\-]/g, '').slice(0, 12);
+document.getElementById('tableNo').addEventListener('input', function(){ TABLE = this.value.replace(/[^0-9A-Za-z\-]/g, '').slice(0, 12); try { localStorage.setItem('sultan_table', TABLE); } catch(e){} });
+document.getElementById('waBtn').addEventListener('click', function(){
+  var t = TR[currentLang], st = listStats(), msg = t.order + (TABLE ? ' – ' + t.table.replace(/ \(.*\)/, '') + ' ' + TABLE : '') + ':\n';
+  for (var id in LIST){ var d = byId(id); if (d && LIST[id] > 0) msg += LIST[id] + '× ' + d.name[currentLang] + ' (' + d.price + ')\n'; }
+  msg += t.total + ': ' + fmt(st.sum);
+  window.open('https://wa.me/' + RESTAURANT.whatsapp.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(msg), '_blank');
+});
+try { if (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) document.getElementById('themeBtn').click(); } catch(e){}
+
+document.getElementById('modalImage').onerror = function(){ imgErr(this); };
+function setHH(){ document.documentElement.style.setProperty('--hh', document.querySelector('header').offsetHeight + 'px'); }
+window.addEventListener('resize', setHH); window.addEventListener('load', setHH); setHH();
+
+render();
+console.log('Kültür Kebaphaus: ' + DISHES.length + ' dishes loaded');
+</script>
+</body>
+</html>
